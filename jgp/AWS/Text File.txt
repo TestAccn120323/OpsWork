@@ -181,6 +181,7 @@ docs ---- aws federation
 
 ========================================================EC2=================================================================
 
+It is a regional service.
 Provide computing services.
 
 types of ec2 --- it is based on the specification

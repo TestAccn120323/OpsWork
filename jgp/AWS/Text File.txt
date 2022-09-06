@@ -220,4 +220,4 @@ outbound --- traffic going out of server
 ***cli access for aws services needs secret key and access key and 'aws configure' needs to be executed***
 ***Think of ec2 as your another system (like your local system) in cloud with only cli mode***
 
-*** aws output format *** 
+*** Read aws output format *** 

@@ -1,0 +1,268 @@
+> Man command
+	- man {command}
+	- [options]...
+		- square brackets indicate that they can be left out
+		- dots indicate, there can be more than one option
+		- bold text --- type as it is
+		- italic or underline --- to be substituted 
+		- shell builtin commands don't have a man page
+		- commands built on disc have a dedicated man page
+		- help command is used for shell builtin commands only
+			eg:- help cd
+		- man -k {keyword} --- search in all the man pages
+		- type command is used to check for shell builtin commands
+
+> add a space before commands to not count in the history
+
+> ls -ld {file or folder} --- displays the details of the {file or folder}
+> du -sh {directory} --- displays the size of the directory
+> graphical applications require file extensions to open the file
+
+> wc -l --- counts the no of lines in a file
+	eg:- wc -l {file name}
+
+	wc {file name} --- gives lines, words, letters as output
+	
+	wc -w --- word counts
+	wc -c --- character counts
+	(c == d) and (a == b)
+
+> who --- gives you the logged in user informations
+
+> tty --- gives the file equivelent of the shell or terminal
+	eg:- ifconfig > /dev/pts/0 --- will give the output on the terminal whose file eqv is /dev/pts/0
+
+> tee --- displays the output on the terminal and saves in the file too
+	eg:- ifconfig | tee m.txt
+	eg:- ifconfig | tee -a m.txt --- appends to the file: due to '-a'
+
+> uname -r --- kernel version
+
+> for exact name search with locate command --- locate '\{name}'
+> locate -i {file} --- ignores case
+
+> which {command} --- returns the path of executable which is executed when the command is run
+> which -a {command} --- return ALL the path of executables
+
+> find ./ -iname --- case insensitive
+
+
+=================================================
+
+Archieving 
+
+tar -czvf {file name of the archive} {path to the file to be archievd}
+
+	-c --- to create archieve
+	-z --- to compress using gzip tool
+	-v --- verbose -- to show the archieving process
+	-f --- file -- specify the file name in which a given file has to be archievd
+		*** need to specify the file name just after the use of -f
+				eg:- tar -czvf --exclude=''   ---- wrong
+					 tar -cfzv --- wrong
+					 tar -cf {file name} -zv ... ---- possible
+
+	-x --- to extract the file, specifically tar file
+
+	--exclude= 'filename' --- filename is excluded rest will be archived
+	-C --- to give the path where the data is to be extracted
+		tar -xzvf filename.tar.gz -C {path where the extracted files will be}
+
+for bzip --- tar -cjvf .....
+	bzip is better than gzip
+
+to browse a archive file --- tar -tf {filename} 
+
+=========================================================
+Hard and soft links 
+
+ls -li --- gives you information about inode number, a number pointing to the address in memory kind of
+
+to find the files with same inode number --- find {path} -inum {inode number}
+.. and . are the hard links 
+
+create a hard link --- ln {filename} {new file name}
+
+create a sym link --- ln -s {filename} {new file name}
+
+===========================================================
+
+/etc/passwd---
+
+here :x: this 'x' means the user is password protected if x is not there then the user doesn't need password to login
+- if default terminal of a user is set to false or nologin then that is a system user and is not allowed to login
+
+> /etc/passwd and /etc/shadow --- both play different role in access ui of any user
+
+
+the password field in shadow file--- $cryptographicType$......
+	1 --- md5
+	2a --- blowfish
+	2y --- eksblowfish
+	5 --- sha-256
+	6 --- sha-512
+
+- hashes generated in the passwords in shadow file are different even for the same passwords for different users
+
+> id {user name} --- gives the user id and group id of the current user
+
+=================================================================
+
+useradd --- used to add user
+
+	-c --- to add comment, like user name and all
+	-s --- default shell, like /bin/bash
+	-m --- to make a home dirctory with same name as user
+
+	eg: useradd -m -c "comment" -s "/bin/bash" userName
+
+	userdel -r {user name} --- to remove the user along with the homedirectory
+
+to make a group sudoer --- add % before its name in the sudoers.d dir
+
+> whoami --- prints the current user name
+
+==================================================================
+
+real user id and effective user id --- ruid and euid
+
+real user id is the user id who logged in initially
+effective user id is the user id who is logged in within the shell opened in real user id
+
+> who --- gives the real user id ---- gives the decrypted information of /var/run/utmp
+	history of utmp is stored in /var/run/wtmp
+> whoami -- gives the effective user id
+
+> \ls --- is the raw ls without any metadata usage
+
+> in a directory if execute permission is not set then write permission has no value
+
+> only root user can change the file owner
+
+>>>>> if the suid is set then the file has the permission of the owner user no matter which user is using the file
+	eg:- cat has to work according to the file it will view if suid is not set
+		if suid is set for cat then it will always have its user permission to access the file (root user)
+
+	to set suid --- chmod u+s {file name} --- s means x and suid set
+	passwd is one such command which have suid bit set
+
+
+	if sgid is set on a directory then all the files and sub dirs inside that directory is owned by the group where sgid is set instead of the primary user group
+
+	> parent directory permission can affect the files or subfolders within it
+
+
+	> sticky bit is for 'others' section. it doesn't allow the users to delete the files in a shared folder
+	> it needs to set for the shared folder
+	> shared folder means everyone have access to it --- permission: -rwxrwxrwx
+
+
+> umask ---
+
+	let umask value be 0002
+	then new file will have permission --- 0666 - 0002 = 0664, default creation permission for file is 0666 and of directory is 0777
+	and new directory will have permission --- 0777 - 0002 = 0775
+	- to change the umask value --- umask {value}
+
+==========================================================================
+
+linux is more secure than windows as, in linux if a virus gets in, then it is limited to the user privileges who is currently logged in.
+zombie --- a terminated process, whose data and resources have not been collected is called a zombie process
+
+process don't share resources while threads share resources
+
+if tty of any process is '?' then it is not attached to any shell, is a system service or a daemon, they run in background and are not interactive, in linux name of daemons end in 'd'
+basically they are server applications which provide some service
+
+ps -aux --- if stat column has '<' means high priority and 'N' means low priority
+	S --- sleeping
+	R --- running
+	T --- Terminated
+	Z --- zombie
+
+running process can only be less than or equal to the number of cores in the pc
+
+ps -u {user name} ---- gives list of process related to a particular user
+in top --- esc key refreshes the process list
+
+htop also gives the process information
+while on top --- press M to sort by memory and P to sort by processor usage
+		 press U to see the process of a single user
+		 press F to enter the fields management screen and press spacebar key to select or deselect the field
+		 press W to write the changes in the view
+		 press E to change the unit of memory
+==============================================================================
+
+to run the process in background add & after the command 
+	eg:- pacman -Syyu &
+	eg:- pacman -Syyu > /dev/null &
+
+foreground process --- can't use the same shell till the process ends
+background process --- can use the same shell even if the process doesn't ends
+
+
+> kill -l --- list all the signals 
+	default is 15th signal
+
+	when ctrl + c is pressed in terminal when a process is still running then signal 2 is executed for that process
+	eg:- kill -2 {pid} or kill -INT {pid} or kill -SIGINT {pid}
+
+	kill -15 --- is soft kill
+		if this is ignored then use hard kill (kill -9)
+	
+	signals in kill command---	
+		KILL --- 9 hard kill
+		TERM --- 15 soft kill
+		INT --- 2
+		
+> pkill {process name} --- kills all the process with the same process name
+> pgrep -l {process name} --- lists all the process with the same process name and its pid
+> pidof {process name} --- lists all the pids of parent and child process of {process name}
+
+
+> pidof {process name} --- to get the pid of the process and its child process
+> a normal user can send signals to their processes but a root user can send signals to any process
+
+> /var/run --- place where the pid of daemons are stored
+
+===============================================================
+
+> ifconfig --- just shows enabled network interfaces
+> ifconfig -a --- shows both enabled and disabled network interfaces
+
+	eg:- enp0s3 --- en means ethernet; p means port no, ie p0 as in port no 0; similarly s means slot no.
+
+> route -n --- gives the information about default gateway 
+	 UG in Flags column means default gateway
+	 default gateway means router in laymann terms
+
+computer network --- it is the communication between 2 or more network interfaces
+	each network interface in a device has an ip address
+
+NIC --- network interface card
+
+Loopback adapter --- it is a virtual adapter whose address is 127.0.0.1, anything done in this address is basically done in the local host 
+			basically a way to itself.
+			in this client request and server response both of these operation is done from the same address thus same machine
+
+to up/down an interface --- ifconfig {interface name} up/down
+
+network masks --- these are the class of ip address or range of ip address
+
+to configure the ip address of a network interface card --- ifconfig {nic name} {desired ip address} up 
+	configuring the ip address of the nic basically means changing the card itself
+
+================================================================= 
+
+> set time and date --- timedatectl set-time "yyyy-mm-dd hh:mm:ss"
+
+> sudo e2label /dev/nvme0n1p1 / --- change the label of the root partition
+
+> sudo fatlabel /dev/{devicename} "newname" ---
+changes the label of fat32 files like boot
+
+> pipewire
+
+information --- pactl info
+
+

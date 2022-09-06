@@ -1,0 +1,166 @@
+=================================VARIABLES===============================
+
+> Key binding of running code in juypter --- ctrl + enter
+> multi assign --- 
+	x,y,z = 10,20,30
+> Variables start with alphabet or underscore
+	eg:- a, _a etc
+> Variables contains only alphanumeric character
+
+=================================OPERATORS==============================
+
+> //= --- floor division
+	eg:- 5 // 2 --- result is 2
+	     5 / 2 --- result is 2.5
+
+> in operator --- checks if the element is present in the list or not
+	eg:- ls = [1,2,3,4,5]
+	     print(1 in ls) --- True
+	     print(8 not in ls) True
+
+> == checks values but 'is' checks id for the variables
+	id is a unique identity given to an object
+
+===================================DATA TYPES===========================
+
+> type() --- gives the class of the object
+	eg:- a = 10
+	     print(type(a))   # <class 'int'>
+
+===================================STRING==============================
+
+> count() --- counts no of elements in the string or array
+	eg:- str = "India is my country"
+	     str.count('i') --- # 2 as there are 2 i's in str
+
+> split() --- splits a string and makes it a list 
+	eg:- str.split() --- ['India', 'is', 'my', 'country']
+	eg:- str.split(sep = o) --- seperates wrt 'o'
+ 
+> find() --- gives the first occ of the element in the list
+	eg:- str.find('i') --- gives first occ of 'i' in str
+
+> replace() --- replaces something with something else
+	eg:- str.replace('i', 'I') --- replaces every occ of 'i' with 'I'
+
+> + is concatination operator
+	print("India" + "Country") --- IndiaCountry
+
+
+====================================Collections=======================
+
+> list --- ls = [1,2,3,4,5]
+	ls = [1,3,"LIst", 4.5]
+	
+> tuple --- ls = (1,2,3,4,5)
+	they are immutable	
+
+> set --- ls = {1,2,3,4}
+	it doesn't allow repeatations
+	can't know which order it will take
+	set will not support indexing
+
+> Dictonary --- key and value pairs
+	ds = {1: 'a', 2: 'b', 3: 'c'}
+	ds.keys gives the keys. # [1,2,3]
+	ds.values gives the values. # [a,b,c]
+
+=================================list====================================
+
+ls = [10,20,30]
+> ls.append(80) --- ls: [10,20,30,80
+> pop() --- removes last element from the list
+> remove() --- removes element from a particular index
+
+> reverse() --- reveres the elements from the list
+	eg:- ls.reverse()
+
+> sort() --- sort all the element
+	eg:- ls.sort()
+
+> insert() --- inserts element at a particular index
+	eg:- ls.insert(4,90) # ls: [10,20,30,80,90]
+
+> index() --- gives the index of first occ of element
+	eg:- ls.index(80) # 3
+> extend([list]) eg:- extends the list with the [list] in the end
+=============================================
+> ls = [10,20,30,40,50]
+
+	ls[1:3] --- # 20,30
+
+> python supports negetive indexing
+	ls[-1] --- # 50
+
+> ls[2:4] --- # 30,40 --- accesses from left to right only
+> ls[2:] --- from 2 till end index
+> ls[:3] --- from start till 3 index
+
+===================================================
+> tuples 
+
+count() --- counts the no of elements in it eg:- tu.count(t) -- counts no of t's in tu
+index() --- gives the index eg:- tu.index(t) -- gives index of first occ of t in tu
+
+==================================================
+
+> sets
+
+add() --- adds element to the set
+pop() --- first element gets popped out
+remove(t) --- t gets removed from the set
+
+=================================================
+
+> dictionary
+
+get() --- di.get({key}) --- gives the value of the key
+keys() --- gives the list of keys
+values() --- gives the list of values
+items() --- gives the list of (key, values) list
+
+
+====================================================
+
+conditional statements---
+
+> if (condition):
+	statements
+
+> , and + both are concatanation operator
+
+====================================================
+
+for loop
+
+> for {index} in [list]:
+	statements
+
+> for fixed no of iterations 'r' 
+	for i in range(r):
+		statements
+
+> while (condition):
+	statements
+
+==============================
+functions
+
+> sum(list) --- gives the sum of the lists
+> user defined function
+	
+
+==============================================
+
+module defination
+
+> make a {module}.py file
+> now import the file --- import {module} as m
+
+> suppose there is a function in module.py as addition(x,y) and div(x,y)
+	you can use this --- from module import addition, div
+
+> max({list}) --- gives the maximum element from the list
+
+> os.getcwd() --- gives the location where the file has been saved
+

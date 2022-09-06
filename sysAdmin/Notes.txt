@@ -1,0 +1,455 @@
+===========================VAGRANT=============================
+
+> vagrant init <name> --- to get the vagrant file
+> vagrant up --- to start the VM
+> vagrant ssh --- to open the bash of the VM
+> vagrant halt --- to close the bash
+> exit --- log out
+> vagrant destroy --- to delete the VM
+> vagrant reload --- reboots the VM
+
+===========================LINUX===============================
+
+> Root directory: /
+> Home Directory: 
+
+	for root-------- /root
+	for other users (say vagrant in this case) --------------- /home/vagrant
+
+> System executables and user executables are stored in /usr/sbin, /usr/bin 
+> Configuration files for network, user or system are stored in /etc
+> Temporary data are stored in /tmp 
+> Kernal and bootloader are stored in /boot, ie - grub.cfg
+> Server data are stored in /srv
+> /var --- system log files are located
+> System Information are stored in and /sys
+	eg:- cd /proc/ && uptime --- gives you timing information about the system like since when the system is up and working,
+	how many users are logged in and load average
+	
+	once the system shuts down /proc dir gets empty.
+	
+> /proc/ --- system processes. not stored in the ssd.
+> Shared libraries are stored in /lib, /usr/lib, /usr/local/lib --- c programming libraries for different commands. 
+	to view the library used by a command --- strace -e open {command}	
+> whoami - says which user is currently logged in
+> pwd - present working directory
+> ls - list
+> cat - read text from files and display in bash
+	eg:- cat /etc/os-release --- gives you details about your linux distribution   	
+
+============================================VIM============================================
+
+> Hit 'i' to enter edit mode
+> Hit ':' to enter extended mode
+> Hit escape key to enter in command mode
+> :q to quit
+> :q! to force quit
+> :w to save
+> :wq to save and quit
+> :se nu --- sets line numbers
+> Yanking or copying --- go to line and press 'yy'
+> Pasting --- hit 'p'
+> Yanking multiple lines --- 5yy 
+> Cut --- go to line and press 'dd'
+> Cut multiple lines --- 5dd
+> Undo --- 'u'
+> Searching --- escape + /{the word to be searched}
+> Find and replace --- :%s/{find}/[replace]
+	%s/{find}/{replace}/g
+
+> To navigate to another found word:
+	n --- next
+	shift + n --- prev 
+
+==============================LINUX================================
+
+> ls -l --- long list with file details
+> file {file name} --- get the file details 
+> /dev --- this directory contains device files
+	keyboard files, disk files, shell files etc etc..
+> mkdir -p /opt/dev/ops/devops/test --- creates the whole path if it doesn't exist.
+> create soft link --- ln -s /opt/dev/text.txt cmds.txt
+	here cmds.txt is like a shortcut file for text.txt
+> sort the list of files according the time stamp --- ls -t
+	for detailed file discription --- ls -lt
+	for reversing the show --- ls -ltr
+> change host name --- hostname {new name}
+	edit the file hostname in /etc/ dir first
+
+==============================FILTERS AND REDIRECTION==================================
+
+> grep --- to find keywords in a file
+	eg:- grep {keyword} {file Name}
+	to ignore the case --- grep -i {keyword} {file name}
+	to check all the files in current directory --- grep -i {keyword} *
+	to check all the files in current directory including sub directory --- grep -iR {keyword} *
+	grep -v --- exclude the keyword in the searching directory
+ 
+> less --- text viewer
+	eg:- less {file name}
+> tail --- last lines of the file
+	eg:- tail {file name}
+	eg:- tail -20 {file name} --- to show last 20 lines of the file
+	eg:- tail -f {file name} --- dynamically show the contents of the file (used generally in error logs), in troubleshooting
+
+> log files are located in /var/logs --- server logs and stuffs like that
+	eg:- /var/log/messages contain login informations
+> /etc/passwd --- it contains all user informations in table, in which columns are seperated using ':'
+	better option is awk
+> awk -F':' '{print $1}' /etc/passwd --- displays the first field
+> sed -i 's/{find word}/{replace word}/g' {file name} --- Find and replace 
+	if '-i' is not used then the file will not to written with the new replaced word, it just would print the contents with the 
+	new word in the terminal.
+
+> to write the output of any command in any file --- '>'
+	eg:- ls -l > {filename}
+	this will create the file, if it doesn't exist and write the output of the command in the file. If the file is already 
+	present then it will delete the previous contents of the file and write the new contents
+
+> to append the output of any command in any file --- '>>'
+	eg:- ls -l >> {filename}
+	this doesn't delete the previous contents of the file, it just adds the new contents.
+
+> free -m --- to see the ram and swap memory utilization
+> df -h --- to see the disk partition
+> uptime --- shows the uptime
+
+> /dev/null --- is a black in the Linux galaxy
+	we can remove the output from being displayed in output screen or in any file
+	cat /dev/null > {file name} --- replaces the file with void, null, nothing.
+
+> lssdfasdf -l 2> {filename} --- here '2>' will write the error generated, in the file
+	lssdfasdf -l 2>> {filename} --- appends in the file
+
+> lasdfasdf -l &> {filename} --- writes any type of output in the file. 
+> log files --- these are the files containing outputs in different senarios, so that we can review them later, during bash scripting
+> wc -l {file name} --- counts the number of lines in a file.
+
+> pipe --- '|' symbol is used for piping, ie it does job on the output of the command on left side
+	eg:- ls | wc -l --- gives no of lines in the output of ls.
+
+	ls | grep {name} --- shows everything starting with {name}
+
+> tail -20 /var/log/messages | grep -i vagrant --- from last 20 lines of the file messages, we are searching the word vagrant.
+> find --- to make a search for a file
+	eg:- find /etc -name host* --- searches for files with name starting with host in /etc/ directory
+> locate --- use for searching the file present in db. It is not a real time search. So, we need to run "updatedb" command to 
+	update its database before searching any file in it. 
+
+
+===================================USER AND GROUPS=================================
+
+> [root@centos ~]# head -1 /etc/passwd
+	userName:linktoShadowFile:user id:group id:comment:homeDir:shell
+	root:x:0:0:root:/root:/bin/bash
+	***Shadow File conatains the encrypted password of the user**
+
+> Group --- collection of users
+	groupName:link to shadow:groupid:usernames 
+	 vagrant:x:1000:vagrant
+
+> id --- it gives information about the user
+	id {user name}
+	eg:- id vagrant, id root etc etc
+
+> add user --- useradd {username}
+> add group --- groupadd {groupname}
+
+> add user to a group ---
+	1) usermod -aG {groupName} {username}
+		eg:- usermod -aG devops ansible --- adds ansible user to devops group.
+			(G --- secondary group, g --- primary group)
+	2) BETTER METHOD:: manually add users to the group file in /etc/gruop
+
+> set password for users by root user --- passwd {user}, then enter the password
+	set password for self --- passwd
+
+> Users password is stored(encrypted) in /etc/shadows file.
+
+> switch user --- su - {user name}
+
+> last --- list of users previously logged in or still logged in
+
+> who --- display the current logged in user
+
+> lsof -u {user name} --- gives files accessed by the user.
+
+> delete a user --- userdel {username}
+	delete a user along with its home directory --- userdel -r {username}
+
+> delete a group --- groupdel {groupname}
+
+> [vagrant@centos ~]$ ls -l
+  total 4
+> add or delete user or group can only be done by sudoers
+
+========================================FILES AND PERMISSIONS========================================
+  
+  drwxrwxr-x. 2 vagrant{owner user} vagrant{owner group}   6 Jun 28 16:09 dev
+  -rw-rw-r--. 1 vagrant vagrant 121 Jun 28 17:21 firstfile.txt
+
+	d --- file type
+	rwx --- permission for the owner user
+	rwx --- permission for the group
+	r-x. --- for other users   2 vagrant vagrant   6 Jun 28 16:09 dev
+	-rw-rw-r--. 1 vagrant vagrant 121 Jun 28 17:21 firstfile.txt
+
+> In a directory 
+	r --- can do ls only
+	w --- can make changes 
+	x --- can do 'cd'
+
+
+> Change the ownership of a file (root user) --- chown {username}:{groupname} {filename}
+	eg:- chown ansible:devops /opt/devopsdir
+
+> Change the permissions of a file (root user) --- chmod o-x {filename}
+	o --- others
+	g --- group
+	u --- user
+		-x --- removes executing permission
+		+x --- add executing permission
+
+> Password is not set for a user --- can be logged in by root only.
+> chown -R .... --- for recursive change
+> chmod -R .... --- for recursive change
+
+=======================================SUDOERS===========================================
+
+> to make any user a sudoer ----- run visudo, search for root in the file, and add the user same as root 
+> to get rid of typing user passwd during sudo operations --- make user sudoer and add 'NOPASSWD:' before last 'all'
+	eg:- # Allow root to run any commands anywhere
+	      1 root    ALL=(ALL)       ALL{users entry}
+	      2 ansible         ALL=(ALL)       NOPASSWD: ALL{users entry}  // new line is added same as 1 with 'NOPASSWD'
+
+> to make user sudoer: go to sudoers.d/ directory and make a file with user name (vagrant, in this case), and add the same line like above.
+> sudoers, sudoers.d --- located in /etc/
+
+
+> syntax error in sudores file ---
+	What now? ----- enter 'e' and edit it back.
+
+> curl {link} -o {file name} --- download a file from link with name as {file name}
+> wget {link} --- download file from link
+
+> Manjaro pacman database location --- /var/lib/pacman/
+	local --- installed packages
+	sync --- repos
+
+> Manjaro pacman cache files --- /var/cache/pacman/ --- they can be deleted 
+	COMMNAD: sudo pacman -Scc
+
+> Manual installation can have problems regarding dependencies failure
+
+> pacman --- automates the package installation
+
+> a backword shash '\' --- can write commnad in 2 line
+
+> systemclt (only for root user) --- used to deal with different services like db, httpd etc etc
+	systemctl status {service name} --- check status
+	eg:- systemctl status httpd
+	
+	systemctl start {service name} --- start service 
+	eg:- systemctl start httpd	
+	
+	systemclt restart {service name} --- restart service
+	eg:- systemctl restart httpd
+
+	systemctl stop {service name} --- stop service
+	eg:- systemctl stop httpd
+		httpd --- web server used in client-server model for data or information transfer.
+
+	systemctl enable {service name}
+
+	systemctl is-active {service name} --- tells if service is active or not
+	systemctl is-enabled {service name} --- tells if service is enabled for boot time or not.
+
+==================================PROCESSES=====================================
+
+> top --- shows the processes running and cpu utilisation etc etc, dynamically
+> ps aux --- shows the processes running at that instant and quits.
+> ps -ef --- shows the parent process too 
+	if parent process in not in the table then, it is dead, was executed during boot.
+
+> systemd or init --- first process to start during linux boot
+> forking --- parent process starting some child processes
+
+> STAT: in process table
+	S - sleeping
+	Z - zombie process --- dead processes, but still in process table.	
+
+> Processes in square brackets in process table are kernal threads. eg:- [kernal thread]
+> to stop a process --- kill {process id} --- will first stop the child processes and then itself.
+	eg:- kill 1420
+	kill -9 {process id} --- forcefully close, child processes are not killed.
+
+> [vagrant@centos ~]$ ps -ef | grep -i httpd | grep -v color | awk '{print $2}' | xargs kill -9
+	here, "awk" give column 2 and sends it to kill -9 via xargs
+
+
+> orphan process --- parent process are dead forcefully (kill -9 {process name})
+> orphan process --- adopted by pid 1
+
+==================================ARCHIVING===================================
+
+> tar -czvf {c - create, z - compress, v - verbose, f - file}
+ 	 tar -czvf {fileName}.tar.gz {file to be commpressed}
+	 tar -xf {fileName}.tar.gz -C {location where to be extracted}
+
+> for tar.zst files if above doesn't work --- 
+	unzstd filename.tar.zst --- to a .tar file
+	tar -tf filename.tar --- to see files inside
+	tar -xf filename.tar --- to extract files
+	zstd filename(not a directory) --- to compress to a zstandard file
+
+
+> for zip files
+	zip -r {filename}.zip filename --- to archive
+	unzip filename.zip --- to extract
+
+
+****************************************************************
+# to search for a package in pacman --- pacman -Ss packagename
+	in deb based distros --- apt search packagename
+
+# apache2 and httpd are same
+
+# pacman -Rns --- removes packages including conf files except those in /home
+	-c --- removes the files that depends on this package
+
+# pacman -Syu --- updates the repo list and upgrades packages in system
+# pacman -Syyu --- forcefully updates and upgrades
+# pacman -Syuu --- not recommended as it can even downgrades the packages if newer version is installed than in repo.
+	
+****************************************************************
+
+=================================================VAGRANT AND SERVERS========================================
+
+> vagrant global-status --- see all the vagrant boxes
+> vagrant status --- status of vagrant box (to be done in the directory)
+> In vagrant file --- config.vm.network "public network" - bridge network
+	vb.memory --- ram size for vb
+
+
+> host only adapter --- network operations between host os and vm (private network)
+> nat adapter --- masks vms operations and make it look ad host os operations
+> bridge adapter --- gives vs its own local ip address. (public network)
+> config.vm.syncd_folder "{host machine dir path}", "vm dir path"
+	in host machine path --- path seperated with two forward slashes
+
+================================================PROVISIONING================================================
+
+Provisioning here means executing commands during the boot time of the vm. Also known as bootstraping
+> config.vm.provision "shell", inline: <<-SHELL
+	{command1 to execute}
+	{command2 to execute}
+	{command3 to execute}
+  SHELL
+
+===============================================SERVER===============================================
+
+> HTML templates --- tooplate.com
+> httpd, apache, apache2 --- used to create web server.
+> server data are stored in var directory
+ 	 /var/www/html --- store html files and serves them 
+		by default first file served is --- index.html
+
+> copy the website files into the above directory and restart httpd or apache or apache2
+
+**************************Download through url
+
+1 inspect (f12)
+2 get into headers tab
+3 click the download button
+4 under headers you should see the download link
+ 
+*********************************************
+**************************Copy directories
+
+cp -r {dir path} {destination} --- '-r' is needed
+
+> ip addr show - show the ip address
+> command prompt --- ends with prompt sign (# or $)
+	roo@localhost # --- a prompt
+
+
+------------------------------------------------------------
+
+> remotely connect to a linux client from linux --- ssh client on local machine and ssh server on remote machine
+	on local machine --- ssh {ip addr of the remote machine to be accssed}
+	on remote machine --- /etc/ssh/ssh_config
+		set --- PasswordAuthentication yes
+		set --- PermitRootLogin yes
+		set --- ChallengeResponseAuthentication no
+
+> install openssh-server in the remote system and openssh client in local system
+
+
+===================================================================================================================================================
+
+
+# LINUX TERMINAL IN DETAILS
+
+> shell built in commands do not have man pages 
+	eg:- cd
+	check --- type {command} --- if path desplayed then not shell built in command
+
+> close the shell --- ctrl + d
+> history:
+	bash history --- present in .bash_history file
+	zsh history --- present in .zhistory file
+		in home dir
+
+> !{command} --- last instance of the command is run
+	eg:- $ cat .zhistory
+	     $ cat .bash_history
+	     $ !cat == cat.bash_history
+
+> run command without a trace --- _{command}, here '_' denotes whitespaces
+	eg:- $ who --- stored in history
+	     $  who --- not stored in history
+
+===================================FILE SYSTEMS======================================
+
+> /mnt/ --- was for cd roms and floopy disks
+
+> /proc/ --- contains dynamic info about cpu, which changes during runtime of cpu
+	eg:- cpuinfo
+
+> /run --- contents vanish when system reboots
+
+
+=================================================================================================================================================
+
+
+=============================VAGRANT==============================
+
+> vagrant hostmanager --- it stores information about different vm in a multi vm machine, their private ip and their hostname.
+	it is updated automatically, during vagrant up and vagrant destory commands.
+	> config.hostmanager.enabled = true --- to update /etc/hosts file in all the VMs
+	> config.hostmanager.manage_host = true --- to update /etc/hosts file in the host os
+
+> Nginx --- can be used as web serving tool, load balancer etc 
+	load balancer --- it is used to direct the requests from millions of people to appropriate web servetrue
+
+
+> mysql_secure_installation --- to configure mariadb server
+> mySql -u {username} -p{password}
+> create database {database name}; --- to create database
+> show databases; --- to show all the databases
+
+> to import an sql script --- mysql -u {user name} -p{password} {database name} < {path to sql file};
+	eg:- mysql -u {root} -padmin123 accounts < /home/aryan/db_file.sql;
+
+> to get into a database --- mysql -u {user name} -p{password} {database name};
+
+> ss -tunlp --- to validate if servers are running in appropriate ports
+> ip address --- an address given to the system so that it can be uniquely identified within the system
+> port --- within a system (server) different services can be made running, so during accessing services the port no. uniquely 
+	identifies different ports within the system (same ip address). 
+
+> whenever you do not get desired result try switching to root mode.
+
+> pacman -Qtdq --- used to list rubbish files to be deleted from the disk
+
+ 

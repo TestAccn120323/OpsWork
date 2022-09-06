@@ -1,0 +1,61 @@
+what is ai?
+-> Human intelligence, exhibited by machines
+
+- In industry, we have something called narrow ai. means, machine can be as good as or even better than humans.
+- But, narrow ai can be better only at any one of the fields, like playing chess, or predicting heart disease by looking at the images.
+- Machines better at everything, is called general ai. Which is not possible as of now.
+
+Machine learning 
+
+- machine learning is an approach to achieve successfull ai.
+- According to standford, machine learning is the science of getting computers to act (solve a problem) without being explictly programmed 
+
+Deep learning --- deep learning is a kind of algorithm to implement machine learning
+
+Data science --- Analysing data, and then doing something with it.
+
+Teachable machine --- a web application developed by google, demonstrating machine learning
+
+
+Big Data --- After relational databases, a lot of information were being accumulated by companies like google, facebook etc etc. It became really 
+			 messy to store data in a relational databases. This is what is big data. Big data, brings noSql into picture, like mongodb. 
+			 Eventually, the data grew so much, that it became impossible for a human being to look and make pridictions with it.
+			 This marked the beginning of machine learning
+
+Machine learning playground --- a website demonstrating machine learning 
+
+Types of machine learning ---
+
+
+1. Supervised learning --- here, we have labelled csv kind of, data and labelled input test case, to generate output.
+2. Unsupervised learning --- here, we have unlabelled cse kind of data, and here clustering is done by machines. here,
+							 machines make groups itself.
+3. Reinforcement learning --- here, machines learn itself, by millions of trial and error, rewards and punishments.
+
+===============================Difference between normal computer algorithms and machine learning algorithms====================================
+
+normal algorithms start with set of inputs, and set of instructions to be performed on the inputs to get an output
+	eg:- To make tea, normal algorithm contains--- inputs like milk, sugar, tea leaves etc etc, and the set of instructions like boil the milk, 
+		 add sugar and tea leaves etc etc. Eventually the output is tea.
+
+machine learning algorithms start with set of inputs and an ideal output. And then machine learning algorithms tries to predict the instructions 
+to generate the output.
+
+	eg:- To make tea, ml algorithm contains --- inputs like milk, sugar, tea leaves etc etc, and an ideal tea. 
+		 The objective of ml algorithm or model is to predict the steps to make tea, after 100s of trials. This is reinforcement learning
+
+===================================================================================================================================================
+
+Data analysis --- Looking at the set of data, and gaining some informations based upon the available data.
+Data science --- Experimenting on the set of data, and using it for good. Like Experimenting on the input for making a tea, and trying to 
+				 predict the steps to make one.
+
+Data analysis and machine learning is a part of Data science
+
+
+
+
+
+
+
+

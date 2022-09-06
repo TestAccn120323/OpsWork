@@ -242,3 +242,5 @@ outbound --- traffic going out of server
 	Always create a custom policy to set permission boundary
 
 	Embedded policy --- one to one policy --- inline policy
+
+	Access advisor --- shows the last date a user used the permissions. Used to remove unwanted or unused permissions

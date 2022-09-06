@@ -39,9 +39,6 @@ Types of cloud deployment models ---
 
 ========================================================================
 
-Public cloud --- get a credit card and take the server
-Private cloud --- on premise cloud and could be shared by only few peoples
-
 Q1.How to select a region?
 -> 1. Customer proxmity
    2. Service availability

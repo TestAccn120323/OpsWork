@@ -221,3 +221,16 @@ outbound --- traffic going out of server
 ***Think of ec2 as your another system (like your local system) in cloud with only cli mode***
 
 *** Read aws output format *** 
+
+> suppose i need to access s3 buckets using ec2 instance
+	First of all, create ec2 instance
+	Allow programmatic access for the user, ie access through cli using secret key and access key
+	run the instance, now you are inside your another system
+	configure the system (instance) to login the user.
+	access the user
+	access the services.
+ 
+	or 
+
+	Create a role with s3 permissions
+	attach the role to the instance (Actions -> Security -> Modify IAM role)

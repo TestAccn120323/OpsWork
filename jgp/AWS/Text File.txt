@@ -214,3 +214,5 @@ firewall --- security system of a machine. decides, what type of traffic is allo
 
 inbound --- traffic comming to our server
 outbound --- traffic going out of server
+
+*** buckets for s3 is same as, instances for ec2

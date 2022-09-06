@@ -212,5 +212,6 @@ ssh protocol --- used to connect to linux machines remotely
 firewall --- security system of a machine. decides, what type of traffic is allowed and what are blocked
 		security group is a virtual firewall, ie firewall for virtual machines.
 
+
 inbound --- traffic comming to our server
 outbound --- traffic going out of server

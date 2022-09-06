@@ -217,4 +217,5 @@ outbound --- traffic going out of server
 
 ***buckets for s3 is same as, instances for ec2***
 
-***cli access for aws services needs secret key and access key and 'aws configure' needs to be executed
+***cli access for aws services needs secret key and access key and 'aws configure' needs to be executed***
+***Think of ec2 as your another system (like your local system) in cloud with only cli mode***

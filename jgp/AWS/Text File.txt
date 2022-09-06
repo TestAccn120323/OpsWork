@@ -216,3 +216,5 @@ inbound --- traffic comming to our server
 outbound --- traffic going out of server
 
 ***buckets for s3 is same as, instances for ec2***
+
+***cli access for aws services needs secret key and access key and 'aws configure' needs to be executed

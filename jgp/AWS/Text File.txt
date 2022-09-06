@@ -234,3 +234,9 @@ outbound --- traffic going out of server
 
 	Create a role with s3 permissions
 	attach the role to the instance (Actions -> Security -> Modify IAM role)
+
+	*** if user is configured in an ec2 and ec2 is also assigned a role, then its like user with role's permissions too.
+
+	Permission Boundary - It creates the limit to the permissions of iam services.
+
+	Always create a custom policy to set permission boundary

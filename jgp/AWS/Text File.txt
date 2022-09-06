@@ -240,3 +240,5 @@ outbound --- traffic going out of server
 	Permission Boundary - It creates the limit to the permissions of iam services.
 
 	Always create a custom policy to set permission boundary
+
+	Embedded policy --- one to one policy --- inline policy

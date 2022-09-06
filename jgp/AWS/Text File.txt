@@ -164,6 +164,19 @@ Types of iam policies ---
 ##### HOW TO CREATE ROLES######
 docs ---- aws federation	
 
+
+*** IAM Role is basically like the filming roles --- iam role and policies under the iam role are a part of a film
+	and if a service or user or resource is given the iam role then he acts according to the policies and authorisation given to him
+	in that film.
+
+	eg:- suppose ec2 is given a role with authorisation according to which it can access and delete s3 storage. So, within the duration of the 
+	film, ie within the duration of the role, he can do so. Once, the film, ie the duration gets over, the roles are taken back. 
+
+		Say, here ec2 is the hero, s3 is villian, and hero has a role of a police officer, so he can arrest, shoot, beat villian, till the role is
+		not taken away from him.
+
+	Also, adding to the security, the auto generated credentials by aws for a role is authenticated within equal intervals.
+
 ============================================================================================================================
 
 ========================================================EC2=================================================================
@@ -194,3 +207,10 @@ Security groups allow different ip addresses to access the instances
 Key pairs are region specific, one key pair in one region can't be used in another region
 
 =============================================================================================================================
+
+ssh protocol --- used to connect to linux machines remotely
+firewall --- security system of a machine. decides, what type of traffic is allowed and what are blocked
+		security group is a virtual firewall, ie firewall for virtual machines.
+
+inbound --- traffic comming to our server
+outbound --- traffic going out of server

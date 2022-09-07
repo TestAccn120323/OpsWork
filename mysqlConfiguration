@@ -1,0 +1,10 @@
+> sudo pacman -Syyu
+> sudo pacman -S mysql
+> sudo pacman -S mysqld
+> sudo pacman -S mariadb 
+> systemctl start mariadb
+> sudo mysql_secure_installation
+
+
+In case of errors 
+# mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql

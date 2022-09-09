@@ -229,4 +229,14 @@ outbound --- traffic going out of server
 - s3 has buckets as their identifiers. It acts as a repo or container or folder. Inside this repo, we store data.
   in buckets, data are stored as objects with unique key and metadata associated.
 - by default, all the public access settings are blocked in s3. As the objects inside buckets are set private.
-  even if the objects are made public, still public access is not guranteed
+  even if the objects are made public, still public access is not guranteed.
+- in a bucket, unlimited amount of data can be stored. But, size limit of an object to be uploaded in a bucket is 5tb.
+- Ways to grant the objects are -
+	1.generate bucket policy -- resource based policy. 
+
+
+	**** identity based policy (can be attached to identity level) resource based policy (can be attached to resource level) ****
+
+	during making bucket policy, in json file under resource, enter the object level address, if the action is on the object
+	else bucket level would work.
+	##arn --- aws/amazon resource name.

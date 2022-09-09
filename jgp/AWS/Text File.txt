@@ -218,26 +218,3 @@ outbound --- traffic going out of server
 ***Think of ec2 as your another system (like your local system) in cloud with only cli mode***
 
 *** Read aws output format *** 
-
-> suppose i need to access s3 buckets using ec2 instance
-	First of all, create ec2 instance
-	Allow programmatic access for the user, ie access through cli using secret key and access key
-	run the instance, now you are inside your another system
-	configure the system (instance) to login the user.
-	access the user
-	access the services.
- 
-	or 
-
-	Create a role with s3 permissions
-	attach the role to the instance (Actions -> Security -> Modify IAM role)
-
-	*** if user is configured in an ec2 and ec2 is also assigned a role, then its like user with role's permissions too.
-
-	Permission Boundary - It creates the limit to the permissions of iam services.
-
-	Always create a custom policy to set permission boundary
-
-	Embedded policy --- one to one policy --- inline policy
-
-	Access advisor --- shows the last date a user used the permissions. Used to remove unwanted or unused permissions

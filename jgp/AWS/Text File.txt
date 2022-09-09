@@ -240,3 +240,7 @@ outbound --- traffic going out of server
 	during making bucket policy, in json file under resource, enter the object level address, if the action is on the object
 	else bucket level would work.
 	##arn --- aws/amazon resource name.
+
+- let us say, there is an image.png file in img folder.
+	prefix for image.png is img
+	suffix for image.png is png

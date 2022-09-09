@@ -218,3 +218,10 @@ outbound --- traffic going out of server
 ***Think of ec2 as your another system (like your local system) in cloud with only cli mode***
 
 *** Read aws output format *** 
+
+==============================================S3==============================================
+
+S3 stands for simple storage service.
+It is a cost effective storage service, adapted by a lot of companies.
+It is called as an object storage service, as we can store unstructured data like videos, mp3, images etc etc.
+These data are stored in forms of objects and metadata associated with it.

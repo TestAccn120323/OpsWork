@@ -54,7 +54,7 @@ And all the resources of the physical server is divided into different virtual s
 
 =========================================================================
 
-AWS uses type 2 hyperviser named xen hyperviser
+AWS uses type 1 hyperviser named xen hyperviser
 
 AWS SERVICE domains
 

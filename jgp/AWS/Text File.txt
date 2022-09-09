@@ -221,10 +221,12 @@ outbound --- traffic going out of server
 
 ==============================================S3==============================================
 
-- S3 is a regional service.
+- S3 is a global service kept in a region.
 - S3 stands for simple storage service.
 - It is a cost effective storage service, adapted by a lot of companies.
 - It is called as an object storage service, as we can store unstructured data like videos, mp3, images etc etc.
 - These data are stored in forms of objects and metadata associated with it.
 - s3 has buckets as their identifiers. It acts as a repo or container or folder. Inside this repo, we store data.
   in buckets, data are stored as objects with unique key and metadata associated.
+- by default, all the public access settings are blocked in s3. As the objects inside buckets are set private.
+  even if the objects are made public, still public access is not guranteed

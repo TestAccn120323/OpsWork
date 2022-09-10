@@ -261,4 +261,3 @@ s3 can also act as a cost effective storage option for hosting static website.
 *** Read --- s3 error documentation ***
 
 - Static website hosting 
-

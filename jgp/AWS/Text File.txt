@@ -244,3 +244,21 @@ outbound --- traffic going out of server
 - let us say, there is an image.png file in img folder.
 	prefix for image.png is img
 	suffix for image.png is png
+
+
+- Virtual folder --- We can create folders inside an s3 bucket, but these are not objects. So, objects operation can't be performed in them.
+
+- Versioning --- Kind of git, a versioning control system.
+- When deleted, it creates a delete marker.
+	to get it back, delete the delete marker.
+	to permaneltly delete, the all the versions.
+
+*** Read -- find out the size of amazon s3 bucket ***
+
+s3 can also act as a cost effective storage option for hosting static website.
+
+*** Read --- s3 customer stories. ***
+*** Read --- s3 error documentation ***
+
+- Static website hosting 
+

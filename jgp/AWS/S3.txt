@@ -20,3 +20,5 @@ Consistency model
 - To make it public -:
     Bucket policy --- resource based policy --- applied at service level, applied at s3.bucket
     Bucket policy --- used to generate any type of policy to be used for the bucket.
+    Policy generator --- used to create policy.
+    *** arn --- unique name of the identifier ***

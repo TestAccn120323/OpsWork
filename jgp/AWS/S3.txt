@@ -22,3 +22,8 @@ Consistency model
     Bucket policy --- used to generate any type of policy to be used for the bucket.
     Policy generator --- used to create policy.
     *** arn --- unique name of the identifier ***
+    File structure --- flat structure, as no concept of actual folders. They are all virtual.
+    *** prefix and suffix concept ***
+        img/ -> image.jpg
+        here, img is prefix and jpg is suffix.
+

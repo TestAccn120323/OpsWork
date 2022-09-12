@@ -21,9 +21,18 @@ Consistency model
     Bucket policy --- resource based policy --- applied at service level, applied at s3.bucket
     Bucket policy --- used to generate any type of policy to be used for the bucket.
     Policy generator --- used to create policy.
-    *** arn --- unique name of the identifier ***
+    *** arn --- unique name of everything inside aws services ***
     File structure --- flat structure, as no concept of actual folders. They are all virtual.
     *** prefix and suffix concept ***
         img/ -> image.jpg
         here, img is prefix and jpg is suffix.
 
+Versioning
+
+- Keeping records of previous edits in the file.
+- Policy action: Get object version to get the different versions of the file.
+
+
+S3 use case:
+
+- static website hosting

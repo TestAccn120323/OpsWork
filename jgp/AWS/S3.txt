@@ -3,3 +3,8 @@
 - S3 can be integrated with other aws services.
 - Data can be uploaded via, management console, aws-cli or via amazon APIs
     These amazon APIs can be used in some programs developed by you to upload data directly to s3.
+- name --- globally unique
+- regional service
+- replication of data in different data centers within same region to avoid accidental data deletion.
+
+Consistency model

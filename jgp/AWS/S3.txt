@@ -36,3 +36,4 @@ Versioning
 S3 use case:
 
 - static website hosting
+- event notification --- feature in s3, notifies the selected destinations about any event when it occurs in s3

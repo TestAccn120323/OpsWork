@@ -50,4 +50,12 @@ S3 use case:
 - static website hosting
 - event notification --- feature in s3, notifies the selected destinations about any event when it occurs in s3
     SNS (Simple Notification Service) --- Generates notifications (A destination)
-        access policy --- defines, who can access to the policy.
+        access policy --- defines, who can access sns.
+        By default, only owner can publish or subscribe to sns.
+        Subscription filter policy --- customizes the message to be recieved 
+
+Storage class:
+
+    To keep files for different durations
+    Minimun storage duration --- It simply means that, even if you delete your objects before that minimum duration, 
+                                 they will assume that you have stored for minimum duration and charge your for that time.

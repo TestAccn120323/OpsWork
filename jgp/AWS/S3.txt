@@ -14,3 +14,9 @@ Consistency model
 ***Making folder --- There is no actual folder in bucket, folder just creates another path within the repo/bucket
 - Data are stored in form of objects, and metadata associated with those objects.
 - can store unstructured data
+- unlimited amount of data can be stored
+- Size limit of individual object --- 5tb
+- by default public access is blocked
+- To make it public -:
+    Bucket policy --- resource based policy --- applied at service level, applied at s3.bucket
+    Bucket policy --- used to generate any type of policy to be used for the bucket.

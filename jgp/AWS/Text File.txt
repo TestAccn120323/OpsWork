@@ -221,7 +221,8 @@ outbound --- traffic going out of server
 
 ==============================================S3==============================================
 
-- S3 is a global service kept in a region.
+- S3 is a regional service but it's name should be globally unique.
+- Data uploaded in s3 buckets are replicated at different az within a region. 
 - S3 stands for simple storage service.
 - It is a cost effective storage service, adapted by a lot of companies.
 - It is called as an object storage service, as we can store unstructured data like videos, mp3, images etc etc.
@@ -260,4 +261,6 @@ s3 can also act as a cost effective storage option for hosting static website.
 *** Read --- s3 customer stories. ***
 *** Read --- s3 error documentation ***
 
-- Static website hosting 
+- Serverless service 
+
+- An api basically acts as an interface for data exchange between 2 applications.

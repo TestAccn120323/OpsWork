@@ -1,0 +1,3 @@
+Simple Storage Service.
+S3 can be accessed via APIs, but ebs can only be accessed via ec2 instances only.
+S3 can be integrated with other aws services.

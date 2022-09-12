@@ -1,3 +1,5 @@
-Simple Storage Service.
-S3 can be accessed via APIs, over the internet.
-S3 can be integrated with other aws services.
+- Simple Storage Service.
+- S3 can be accessed via APIs, over the internet.
+- S3 can be integrated with other aws services.
+- Data can be uploaded via, management console, aws-cli or via amazon APIs
+    These amazon APIs can be used in some programs developed by you to upload data directly to s3.

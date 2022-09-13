@@ -59,3 +59,8 @@ Storage class:
     To keep files for different durations
     Minimun storage duration --- It simply means that, even if you delete your objects before that minimum duration, 
                                  they will assume that you have stored for minimum duration and charge your for that time.
+
+
+Access Control List --- Another way to control access to bucket and object, other than bucket policy.
+    - Bucket policy is applied at bucket level./ ie, on bucket's permissions. Whereas, acl applies at bucket level
+      and at object level too.

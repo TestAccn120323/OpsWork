@@ -19,13 +19,11 @@ economy of scales ---- 10kg - 20 rs but if 100kg - 4rs
 
 Types of cloud computing service models ---
 
-IAAS --- Infra as a service, means cloud will provide you with networking features, storage space etc etc. Hardware and os will be managed by you.
-PAAS --- Platform as a service, means cloud will provide you with os and hardware too, you just need to deploy you model. eg:- heroku. 
-		 Basically you don't need to manage you virtualized platform
-		 Application is the only thing, that we'll be managing
-SAAS --- Software as a service, means just subscribe or login and enjoy.
+IAAS --- cloud will provide networking features, storage space etc. Hardware and os will be managed by you.
+PAAS --- iaas + os + ide + sdk, just need to put in the code.
+SAAS --- means just subscribe or login and enjoy.
 
-Suppose you need to get a print out of your some college doc, say result card.
+To get a print out of your some college doc, say result card.
 
 iaas --- you go to shop, choose a printer with desired configuration, buy it and perform the printing operation
 paas --- you go to cyber cafe, give the soft copy of the doc. to cafe owner. And take the printout
@@ -80,17 +78,6 @@ Elements of iam
 
 Groups are a collection of users and a user can be a part of multiple groups
 
-Root user and admin user---
-
-	A root user can create or delete user accounts where as admin user can't do that. Else every power is same for
-	root and admin
-
-	Root user needs to be protected as of security reasons as it is the most powerfull user. Hence, another layer of authentication is needed
-	which is mfa multi factor authentication. It's same as an otp
-
-	Also don't use root user for day to day works. Also in industry, you will not be able to use root user. So, use IAM user then
-
-
 Ways to interact with aws services
 
 	There are 3 ways
@@ -99,13 +86,11 @@ Ways to interact with aws services
 	2. Command line interface --- programmatic access 
 	3. Software development kit, ie we can build software on our own to interact with the services --- programmatic access
 
-
-	All these are api's as they help to communicate to the aws console.
-	IAM user needs to be granted permissions by the root user for everything he wants to do.
-
-
 	Access key and secret access key --- needed when interacting through local machine
 	aws login credentials --- needed when interacting through management console
+
+
+******All the services are shared accorss different iam users and root user within an account.******
 
 
 ================================CONFIGURE AWS IN CLI IN LOCAL MACHINE=========================================
@@ -118,7 +103,9 @@ Ways to interact with aws services
 
 *** segregation of duties --- dividing the duties to different users
 
-Profiling --- used to configure multiple users in same machine, distinguishing them by profile name like developer, ml engineer, devops engineer etc etc
+Profiling --- used to configure multiple users in same machine, distinguishing them by profile name like developer,
+ml engineer etc.
+
 > aws configure --profile {profile name} --- configures according to profile name
 	eg:- aws configure --profile developer 
 
@@ -143,7 +130,8 @@ Types of iam policies ---
 =========================IAM ROLE=================================
 
 - credentials --- access key and secret key
-- iam role is a secure way to access management console as, credentials associated with iam role is temporary or dynamically generated unlike iam user.
+- iam role is a secure way to access management console as, 
+  credentials associated with iam role is temporary or dynamically generated unlike iam user.
 - Here, credentials are not managed by us, it is managed by aws. So, less chance that credentials are compromised.
 - With iam role session duration is attached like 1 hr. --- new credentials are generated after every 1 hr.
 - session duration can be set by us. by default, it is 1hr  
@@ -160,19 +148,6 @@ Types of iam policies ---
 
 ##### HOW TO CREATE ROLES######
 docs ---- aws federation	
-
-
-*** IAM Role is basically like the filming roles --- iam role and policies under the iam role are a part of a film
-	and if a service or user or resource is given the iam role then he acts according to the policies and authorisation given to him
-	in that film.
-
-	eg:- suppose ec2 is given a role with authorisation according to which it can access and delete s3 storage. So, within the duration of the 
-	film, ie within the duration of the role, he can do so. Once, the film, ie the duration gets over, the roles are taken back. 
-
-		Say, here ec2 is the hero, s3 is villian, and hero has a role of a police officer, so he can arrest, shoot, beat villian, till the role is
-		not taken away from him.
-
-	Also, adding to the security, the auto generated credentials by aws for a role is authenticated within equal intervals.
 
 ============================================================================================================================
 

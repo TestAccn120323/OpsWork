@@ -70,7 +70,7 @@ But, bucket policy is preferred over ACLs.
 - URL to access objects --- https://{bucket-name}.s3.{region-name}.amazonaws.com/{object-name}
 
 
-CORS --- Cross origin resource sharing
+CORS --- Cross origin resource sharing (found under permissions section)
 
 - Needs to be enabled, when there is a content sharing between two differnt buckets
   Enabled in the source bucket.

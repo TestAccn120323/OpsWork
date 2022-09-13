@@ -64,3 +64,7 @@ Storage class:
 Access Control List --- Another way to control access to bucket and object, other than bucket policy.
     - Bucket policy is applied at bucket level./ ie, on bucket's permissions. Whereas, acl applies at bucket level
       and at object level too.
+
+But, bucket policy is preferred over ACLs.
+
+- URL to access objects --- https://{bucket-name}.s3.{region-name}.amazonaws.com/{object-name}

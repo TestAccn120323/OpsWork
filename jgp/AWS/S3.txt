@@ -76,3 +76,6 @@ CORS --- Cross origin resource sharing (found under permissions section)
 
 - Needs to be enabled, when there is a content sharing between two differnt buckets
   Enabled in the source bucket.
+
+
+- lifecycle application on objects --- transition from one storage class to another or Expiration

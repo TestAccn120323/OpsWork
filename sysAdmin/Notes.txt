@@ -95,7 +95,6 @@
 > log files are located in /var/logs --- server logs and stuffs like that
 	eg:- /var/log/messages contain login informations
 > /etc/passwd --- it contains all user informations in table, in which columns are seperated using ':'
-	better option is awk
 > awk -F':' '{print $1}' /etc/passwd --- displays the first field
 > sed -i 's/{find word}/{replace word}/g' {file name} --- Find and replace 
 	if '-i' is not used then the file will not to written with the new replaced word, it just would print the contents with the 
@@ -156,10 +155,7 @@
 > add group --- groupadd {groupname}
 
 > add user to a group ---
-	1) usermod -aG {groupName} {username}
-		eg:- usermod -aG devops ansible --- adds ansible user to devops group.
-			(G --- secondary group, g --- primary group)
-	2) BETTER METHOD:: manually add users to the group file in /etc/gruop
+	manually add users to the group file in /etc/gruop
 
 > set password for users by root user --- passwd {user}, then enter the password
 	set password for self --- passwd
@@ -173,9 +169,6 @@
 > who --- display the current logged in user
 
 > lsof -u {user name} --- gives files accessed by the user.
-
-> delete a user --- userdel {username}
-	delete a user along with its home directory --- userdel -r {username}
 
 > delete a group --- groupdel {groupname}
 

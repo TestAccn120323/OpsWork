@@ -1,1 +1,8 @@
 ec2 --- servers running in aws data centers
+
+- Types of ec2 servers
+    1. t, m --- general purpose
+    2. c --- compute intensive
+    3. r, x --- ram is more
+    4. g, p --- more gpu
+    5. i, d 

@@ -10,6 +10,7 @@
 Consistency model
 
 - replication of data in different data centers within same region to avoid accidental data deletion.
+    
 - Read after write Consistency
 ***Making folder --- There is no actual folder in bucket, folder just creates another path within the repo/bucket
 - Data are stored in form of objects, and metadata associated with those objects.

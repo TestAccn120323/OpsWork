@@ -6,3 +6,4 @@ ec2 --- servers running in aws data centers
     3. r, x --- ram is more
     4. g, p --- more gpu
     5. i, d 
+

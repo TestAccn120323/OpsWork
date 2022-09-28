@@ -193,3 +193,8 @@ outbound --- traffic going out of server
 ***Think of ec2 as your another system (like your local system) in cloud with only cli mode***
 
 *** Read aws output format *** 
+
+> AMI
+
+We can create an ec2 instance and install required softwares and finally create an AMI.
+We can also copy ami from one region to another.

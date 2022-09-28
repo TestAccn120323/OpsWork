@@ -1,1 +1,7 @@
 ephemeral storage --- ram 
+
+throughput --- measure of unit of data transferred per second
+iops --- measure of no of i/o operations per second
+
+burst performance --- sudden surge
+    eg: burst performance of 3000 iops --- sudden surge in iops could be upto 3000

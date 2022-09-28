@@ -172,6 +172,7 @@ eg:- say there is a 10 core cpu, this cpu can be treated as one 4 core vcpu and 
 Virtual cpu (vCPU) --- Each vcpu is a hyper-thread of an Intel xeon core. 
 
 Key pair--- private key is with you, public key in the instance. public key is decyfered using the private key and instance is launched
+	Once created it can't be accessed again, so keep the key pair safe 
 
 AMI is analogous to iso image files in case of local virtual.
 

@@ -12,3 +12,6 @@ EBS types ---
     2. provisioned ssd
     3. throughput optimized hdd
     4. cold storage hdd
+
+- With provisioned iops ssd, we have a feature of multi attach --- attach multiple (upto 16) ec2 instances with the same EBS
+- But, ec2 instances should be nitro based

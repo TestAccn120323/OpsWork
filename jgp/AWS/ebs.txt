@@ -1,3 +1,5 @@
+EBS is a block storage
+
 ephemeral storage in an ec2 --- ram 
 
 throughput --- measure of unit of data transferred per second

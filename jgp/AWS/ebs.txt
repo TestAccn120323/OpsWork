@@ -16,3 +16,5 @@ EBS types ---
 
 - With provisioned iops ssd, we have a feature of multi attach --- attach multiple (upto 16) ec2 instances with the same EBS
 - But, ec2 instances should be nitro based
+
+- Backing up data in ebs --- snapshot

@@ -189,10 +189,6 @@ firewall --- security system of a machine. decides, what type of traffic is allo
 inbound --- traffic comming to our server
 outbound --- traffic going out of server
 
-***buckets for s3 is same as, instances for ec2*** --- instance and buckets are identifiers for ec2 and s3. 
-***cli access for aws services needs secret key and access key and 'aws configure' needs to be executed***
-***Think of ec2 as your another system (like your local system) in cloud with only cli mode***
-
 *** Read aws output format *** 
 
 > AMI

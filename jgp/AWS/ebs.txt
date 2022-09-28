@@ -1,1 +1,1 @@
-emphemeral storage --- ram 
+ephemeral storage --- ram 

@@ -162,7 +162,7 @@ types of ec2 --- it is based on the specification
 2. memory optimized --- ram is more
 3. storage optimized --- high storage
 4. Acclerated computing --- balance between ram and virtual cpu, can handle sudden traffic hikes
-5.	Compute optimized --- virtual cpu is more, it is not good for sudden traffic hikes, good for ml
+5. Compute optimized --- virtual cpu is more, it is not good for sudden traffic hikes, good for ml
 
 
 Hyper-threading is a process by which a CPU divides up its physical cores into virtual cores that are 

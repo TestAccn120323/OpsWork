@@ -196,5 +196,6 @@ outbound --- traffic going out of server
 
 > AMI
 
-We can create an ec2 instance and install required softwares and finally create an AMI.
+Creating ami of our own --- creating snapshots
 We can also copy ami from one region to another.
+elastic ip --- when allocated, doesn't change after instance restarts.

@@ -1,4 +1,4 @@
-ephemeral storage --- ram 
+ephemeral storage in an ec2 --- ram 
 
 throughput --- measure of unit of data transferred per second
 iops --- measure of no of i/o operations per second

@@ -4,5 +4,5 @@ throughput --- measure of unit of data transferred per second
 iops --- measure of no of i/o operations per second
 With 3000 IOPS/Gib you have 3000 operations of input/output per second, with the capacity to transfer 1Gib.
 
-burst performance --- sudden surge
+burst performance --- sudden surge beyond max performance. It's available for a little time. if need more time then pay
     eg: burst performance of 3000 iops --- sudden surge in iops could be upto 3000

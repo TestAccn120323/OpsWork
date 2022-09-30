@@ -29,3 +29,5 @@ DLM --- Data Lifecycle Manager
     eg:- We want to create the backup only for 30 days. 
          After 30 days the backup will be deleted
     This is free to use. 
+
+Ebs encryption 

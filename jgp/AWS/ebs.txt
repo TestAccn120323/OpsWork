@@ -18,3 +18,5 @@ EBS types ---
 - But, ec2 instances should be nitro based
 
 - Backing up data in ebs --- snapshot
+- snapshots are stored in s3
+- first snapshot creates backup of all the files but eventually, next snapshots just creates the new files added, not the old ones.

@@ -24,3 +24,7 @@ EBS types ---
 - we can copy snapshots from one region to another
 
 DLM --- Data Lifecycle Manager
+    We can provide lifecycle policies for an ebs snapshot based on tags.
+    eg:- We want to create the backup only for 30 days. 
+         After 30 days the backup will be deleted
+    This is free to use. 

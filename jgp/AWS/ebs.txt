@@ -22,6 +22,7 @@ EBS types ---
 - first snapshot creates backup of all the files but eventually, next snapshots just creates the new files added, not the old ones.
 
 - we can copy snapshots from one region to another
+- During copying we can also encrypt data.
 
 DLM --- Data Lifecycle Manager
     We can automate backup and restore works for ebs, in fixed time intervals
@@ -30,4 +31,4 @@ DLM --- Data Lifecycle Manager
          After 30 days the backup will be deleted
     This is free to use. 
 
-Ebs encryption 
+ec2 and ebs both should be in the same availability zone.

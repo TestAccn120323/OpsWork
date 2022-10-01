@@ -31,4 +31,4 @@ DLM --- Data Lifecycle Manager
          After 30 days the backup will be deleted
     This is free to use. 
 
-ec2 and ebs both should be in the same availability zone.
+EBS created will be available to the instances in the same availability zones.

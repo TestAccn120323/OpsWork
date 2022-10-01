@@ -32,3 +32,4 @@ DLM --- Data Lifecycle Manager
     This is free to use. 
 
 EBS created will be available to the instances in the same availability zones.
+- for encryption, check encrypt and select master key ---- will be encrypted.

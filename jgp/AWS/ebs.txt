@@ -35,3 +35,4 @@ EBS created will be available to the instances in the same availability zones.
 - for encryption, check encrypt and select master key ---- will be encrypted.
 
 lsblk --- lists all the blocks attached to the instance
+- n no of ebs volumes can be attached to an instance

@@ -41,5 +41,5 @@ file -s /dev/devicename --- displays details about the file "devicename"
     - run mkfs and make a proper file system
 mkfs -t ext4 /dev/devicename --- create the file "devicename" with ext4 file format
 mount /dev/devicename /path --- mounts "devicename" to /path
-unmount /dev/devicename --- unmount "devicename"
+umount /dev/devicename --- unmount "devicename"
 resize2fs --- resize volume 

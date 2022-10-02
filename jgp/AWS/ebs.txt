@@ -37,5 +37,9 @@ EBS created will be available to the instances in the same availability zones.
 
 lsblk --- lists all the block storage attached to the instance
 file -s /dev/devicename --- displays details about the file "devicename"
+    - if output is data --- not formated
+    - run mkfs and make a proper file system
 mkfs -t ext4 /dev/devicename --- create the file "devicename" with ext4 file format
 mount /dev/devicename /path --- mounts "devicename" to /path
+unmount /dev/devicename --- unmount "devicename"
+resize2fs --- resize volume 

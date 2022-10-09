@@ -170,6 +170,12 @@ types of ec2 --- it is based on the specification
 
 Hyper-threading is a process by which a CPU divides up its physical cores into virtual cores that are 
 treated as if they are actually physical cores by the operating system.
+
+hyper threading --- https://qr.ae/pvZjq4
+	virtual cores are just 2 desks for the physical core (human) to work.
+	It reduces the switching time between two threads.
+	It allows multiple threads to run in the core of cpu.
+
 eg:- say there is a 10 core cpu, this cpu can be treated as one 4 core vcpu and one 6 core vcpu.
 
 Virtual cpu (vCPU) --- Each vcpu is a hyper-thread of an Intel xeon core. 

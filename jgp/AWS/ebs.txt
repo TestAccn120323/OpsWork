@@ -44,3 +44,4 @@ mount /dev/devicename /path --- mounts "devicename" to /path
 umount /dev/devicename --- unmount "devicename"
 resize2fs resize2fs /dev/devicename --- resize volume (cant be decreased)
     first resize the ebs from aws console and then run this command
+    

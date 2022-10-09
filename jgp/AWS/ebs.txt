@@ -36,12 +36,12 @@ EBS created will be available to the instances in the same availability zones.
 - n no of ebs volumes can be attached to an instance
 
 lsblk --- lists all the block storage attached to the instance
-file -s /dev/devicename --- displays details about the file "devicename"
+file -s /dev/devicename --- displays details about the file "devicename" (-s --- for block files)
     - if output is data --- not formated
     - run mkfs and make a proper file system
 mkfs -t ext4 /dev/devicename --- create the file "devicename" with ext4 file format
 mount /dev/devicename /path --- mounts "devicename" to /path
 umount /dev/devicename --- unmount "devicename"
-resize2fs resize2fs /dev/devicename --- resize volume (cant be decreased)
+resize2fs /dev/devicename --- resize volume (cant be decreased)
     first resize the ebs from aws console and then run this command
     

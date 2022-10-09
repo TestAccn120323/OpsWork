@@ -60,6 +60,7 @@ AWS SERVICE domains
 	2. STORAGE -- MEMORY TO STORE DATA
 	3. NETWORKING -- COMMUNICATION 
 	4. DATABASE -- TRANSACTIONS LIKE CRUD OPERATIONS
+	5. ...
 
 IAM --- IDENTITY AND ACCESS MANAGEMENT under Management and governance
 
@@ -86,7 +87,7 @@ Ways to interact with aws services
 	2. Command line interface --- programmatic access 
 	3. Software development kit, ie we can build software on our own to interact with the services --- programmatic access
 
-	Access key and secret access key --- needed when interacting through local machine
+	Access key and secret key --- needed when interacting through local machine
 	aws login credentials --- needed when interacting through management console
 
 

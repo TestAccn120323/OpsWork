@@ -23,6 +23,8 @@ IAAS --- cloud will provide networking features, storage space etc. Hardware and
 PAAS --- iaas + os + ide + sdk, just need to put in the code.
 SAAS --- means just subscribe or login and enjoy.
 
+Read difference --- https://qr.ae/pvZjky
+
 To get a print out of your some college doc, say result card.
 
 iaas --- you go to shop, choose a printer with desired configuration, buy it and perform the printing operation

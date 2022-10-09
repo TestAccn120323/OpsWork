@@ -176,8 +176,6 @@ hyper threading --- https://qr.ae/pvZjq4
 	It reduces the switching time between two threads.
 	It allows multiple threads to run in the core of cpu.
 
-eg:- say there is a 10 core cpu, this cpu can be treated as one 4 core vcpu and one 6 core vcpu.
-
 Virtual cpu (vCPU) --- Each vcpu is a hyper-thread of an Intel xeon core. 
 
 Key pair--- private key is with you, public key in the instance. public key is decyfered using the private key and instance is launched
@@ -205,3 +203,4 @@ outbound --- traffic going out of server
 Creating ami of our own --- creating snapshots
 We can also copy ami from one region to another.
 elastic ip --- when allocated, doesn't change after instance restarts.
+when unallocated, it gets billed.

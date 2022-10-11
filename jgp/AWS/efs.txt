@@ -1,3 +1,0 @@
-EFS is a cloud based file-storage service.
-Here, we can attach multiple ec2 instances except windows to a single EFS identifier.
-*** Install nfs-common (nfs client) in the instance before mounting EFS storage --- uses nfs protocol

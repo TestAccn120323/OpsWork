@@ -29,6 +29,8 @@ DLM --- Data Lifecycle Manager
     We can provide lifecycle policies for an ebs snapshot based on tags.
     eg:- We want to create the backup only for 30 days. 
          After 30 days the backup will be deleted
+
+         We want to create the backup (snapshot) in every 30 days and keep it for 29 days etc etc.
     This is free to use. 
 
 EBS created will be available to the instances in the same availability zones.

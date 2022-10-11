@@ -181,7 +181,7 @@ Virtual cpu (vCPU) --- Each vcpu is a hyper-thread of an Intel xeon core.
 Key pair--- private key is with you, public key in the instance. public key is decyfered using the private key and instance is launched
 	Once created it can't be accessed again, so keep the key pair safe 
 
-AMI is analogous to iso image files in case of local virtual.
+AMI is basically backup of all the system files and other files in the instance, hardware configurations can change.
 
 Security groups allow different ip addresses to access the instances
 

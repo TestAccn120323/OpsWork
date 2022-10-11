@@ -32,6 +32,7 @@ DLM --- Data Lifecycle Manager
 
          We want to create the backup (snapshot) in every 30 days and keep it for 29 days etc etc.
     This is free to use. 
+    No longer need to create custom scripts for the same
 
 EBS created will be available to the instances in the same availability zones.
 - for encryption, check encrypt and select master key ---- will be encrypted.

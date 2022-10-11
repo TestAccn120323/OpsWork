@@ -45,7 +45,8 @@ df -h --- lists all the mounted storage dev files
 file -s /dev/devicename --- displays details about the file "devicename" (-s --- for block files)
     - if output is data --- not formated
     - run mkfs and make a proper file system
-mkfs -t ext4 /dev/devicename --- create the file "devicename" with ext4 file format
+mkfs -t ext4 /dev/devicename --- create the file "devicename" with ext4 file 
+    use ext4 or xfs only
 mount /dev/devicename /path --- mounts "devicename" to /path
 umount /dev/devicename --- unmount "devicename"
 resize2fs /dev/devicename --- resize volume (cant be decreased)

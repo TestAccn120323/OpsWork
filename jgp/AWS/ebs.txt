@@ -52,3 +52,5 @@ umount /dev/devicename --- unmount "devicename"
 resize2fs /dev/devicename --- resize volume (cant be decreased)
     first resize the ebs from aws console and then run this command
     
+
+EBS snapshots are same as of ec2 AMIs

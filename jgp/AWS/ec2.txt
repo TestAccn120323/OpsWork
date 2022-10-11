@@ -204,3 +204,5 @@ Creating ami of our own --- creating snapshots
 We can also copy ami from one region to another.
 elastic ip --- when allocated, doesn't change after instance restarts.
 when unallocated, it gets billed.
+
+0.0.0.0/0 --- means all the networks 

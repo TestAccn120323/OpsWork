@@ -34,6 +34,8 @@ DLM --- Data Lifecycle Manager
     This is free to use. 
     No longer need to create custom scripts for the same
 
+    We can create only 100 lifecycle policies in a region
+
 EBS created will be available to the instances in the same availability zones.
 - for encryption, check encrypt and select master key ---- will be encrypted.
 - n no of ebs volumes can be attached to an instance

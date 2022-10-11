@@ -35,7 +35,7 @@ EBS created will be available to the instances in the same availability zones.
 - for encryption, check encrypt and select master key ---- will be encrypted.
 - n no of ebs volumes can be attached to an instance
 
-lsblk --- lists all the block storage attached to the instance
+lsblk --- lists all the block storage attached to the instance (mounted or unmounted)
 file -s /dev/devicename --- displays details about the file "devicename" (-s --- for block files)
     - if output is data --- not formated
     - run mkfs and make a proper file system

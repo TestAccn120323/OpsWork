@@ -1,0 +1,2 @@
+EFS is a cloud based file-storage service.
+Here, we can attach multiple ec2 instances to a single EFS identifier.

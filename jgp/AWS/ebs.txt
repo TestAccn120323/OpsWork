@@ -36,6 +36,7 @@ EBS created will be available to the instances in the same availability zones.
 - n no of ebs volumes can be attached to an instance
 
 lsblk --- lists all the block storage attached to the instance (mounted or unmounted)
+df -h --- lists all the mounted storage dev files
 file -s /dev/devicename --- displays details about the file "devicename" (-s --- for block files)
     - if output is data --- not formated
     - run mkfs and make a proper file system

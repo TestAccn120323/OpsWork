@@ -212,4 +212,4 @@ private key is generated only at the generation of the key pair.
 public key and private key is nothing but a lock and key 
 	public key is lock and private key is key to open the lock.
 
-copy fileName from system to instance --- scp -i "Key name" fileName instanceName:
+copy fileName from system to instance --- scp -i "Key name" fileName instanceName: --- will be available on home dir.s

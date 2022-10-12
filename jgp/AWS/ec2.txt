@@ -187,6 +187,8 @@ Security groups allow different ip addresses to access the instances
 
 Key pairs are region specific, one key pair in one region can't be used in another region
 
+We can change the ec2 instance type anytime, hence it's elastic
+
 =============================================================================================================================
 
 ssh protocol --- used to connect to linux machines remotely

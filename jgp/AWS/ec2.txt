@@ -168,6 +168,14 @@ types of ec2 --- it is based on the specification
 5. Compute optimized --- virtual cpu is more, it is not good for sudden traffic hikes, good for ml
 
 
+different ec2 instances based on the usage:
+
+1. on demand --- whenever needed, launch the instance, and terminate when done.
+2. reserved instances --- reserve an instance for a couple of time like 3 yrs.
+3. dedicated host --- kinda private jet. The whole server is allocated along with the hypervisor. (due to HIPAA compliance)
+4. 
+
+
 Hyper-threading is a process by which a CPU divides up its physical cores into virtual cores that are 
 treated as if they are actually physical cores by the operating system.
 

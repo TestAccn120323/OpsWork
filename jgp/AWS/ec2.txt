@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-AWS regions --- 26 
-=======
 Remotely accessing a service over the internet or intranet is called CLOUD COMPUTING.
 Staiistically, 33% of websites in the internet uses aws 
 
@@ -209,4 +206,3 @@ elastic ip --- when allocated, doesn't change after instance restarts.
 when unallocated, it gets billed.
 
 0.0.0.0/0 --- means all the networks 
->>>>>>> parent of 9b6750e (update)

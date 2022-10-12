@@ -209,3 +209,5 @@ when unallocated, it gets billed.
 
 public key pair is present in the key pair section on ec2.
 private key is generated only at the generation of the key pair.
+public key and private key is nothing but a lock and key 
+	public key is lock and private key is key to open the lock.

@@ -1,0 +1,56 @@
+EBS is a block storage
+ephemeral storage in an ec2 --- ram 
+
+throughput --- measure of unit of data transferred per second
+iops --- measure of no of i/o operations per second
+With 3000 IOPS/Gib you have 3000 operations of input/output per second, with the capacity to transfer 1Gib.
+
+burst performance --- sudden surge beyond max performance. It's available for a little time. if need more time then pay
+    eg: burst performance of 3000 iops --- sudden surge in iops could be upto 3000
+
+EBS types ---
+    1. general purpose ssd 
+    2. provisioned ssd
+    3. throughput optimized hdd
+    4. cold storage hdd
+
+- With provisioned iops ssd, we have a feature of multi attach --- attach multiple (upto 16) ec2 instances with the same EBS
+- But, ec2 instances should be nitro based
+
+- Backing up data in ebs --- snapshot
+- snapshots are stored in s3
+- first snapshot creates backup of all the files but eventually, next snapshots just creates the new files added, not the old ones.
+
+- we can copy snapshots from one region to another
+- During copying we can also encrypt data.
+
+DLM --- Data Lifecycle Manager
+    We can automate backup and restore works for ebs, in fixed time intervals
+    We can provide lifecycle policies for an ebs snapshot based on tags.
+    eg:- We want to create the backup only for 30 days. 
+         After 30 days the backup will be deleted
+
+         We want to create the backup (snapshot) in every 30 days and keep it for 29 days etc etc.
+    This is free to use. 
+    No longer need to create custom scripts for the same
+
+    We can create only 100 lifecycle policies in a region
+
+EBS created will be available to the instances in the same availability zones.
+- for encryption, check encrypt and select master key ---- will be encrypted.
+- n no of ebs volumes can be attached to an instance
+
+lsblk --- lists all the block storage attached to the instance (mounted or unmounted)
+df -h --- lists all the mounted storage dev files
+file -s /dev/devicename --- displays details about the file "devicename" (-s --- for block files)
+    - if output is data --- not formated
+    - run mkfs and make a proper file system
+mkfs -t ext4 /dev/devicename --- create the file "devicename" with ext4 file 
+    use ext4 or xfs only
+mount /dev/devicename /path --- mounts "devicename" to /path
+umount /dev/devicename --- unmount "devicename"
+resize2fs /dev/devicename --- resize volume (cant be decreased)
+    first resize the ebs from aws console and then run this command
+    
+
+EBS snapshots are same as of ec2 AMIs

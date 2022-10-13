@@ -168,7 +168,7 @@ types of ec2 --- it is based on the specification
 5. Compute optimized --- virtual cpu is more, it is not good for sudden traffic hikes, good for ml
 
 
-different ec2 instances based on the usage:
+different ways to launch ec2 instances:
 
 1. on demand --- whenever needed, launch the instance, and terminate when done.
 2. reserved instances --- reserve an instance for a couple of time like 3 yrs.

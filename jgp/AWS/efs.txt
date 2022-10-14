@@ -6,3 +6,5 @@ For windows it's FSX, to do the same.
 It's basically distributed file system, where files are accessed from a remote device and seem to be present in the local computer.
 
 *** Install nfs-common (nfs client) in the instance before mounting EFS storage --- uses nfs protocol
+
+EFS storage service can scale automatically.

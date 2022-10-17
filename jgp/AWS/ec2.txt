@@ -233,3 +233,5 @@ public key and private key is nothing but a lock and key
 copy fileName from system to instance --- scp -i "Key name" fileName instancePublicDNS: --- will be available on home dir.
 
 ngnix --- used to build web servers and host multiple websites.
+
+when restarted, ec2 instances change physical hardware.

@@ -235,3 +235,8 @@ copy fileName from system to instance --- scp -i "Key name" fileName instancePub
 ngnix --- used to build web servers and host multiple websites.
 
 when restarted, ec2 instances change physical hardware, within same data center.
+
+Service Legal Agreement (sla) --- 99.99% uptime
+	means in 100 unit of time, instance will be up for at least 99.99 units
+
+This sla can be for any aws service.

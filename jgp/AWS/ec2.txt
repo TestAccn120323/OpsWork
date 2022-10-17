@@ -241,3 +241,5 @@ Service Legal Agreement (sla) --- 99.99% uptime
 
 This sla can be for any aws service.
 Upfront --- money paid during the buying of the service
+
+key pairs are encrypted using rsa cryptographic algorithm

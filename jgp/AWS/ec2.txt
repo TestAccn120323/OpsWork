@@ -234,4 +234,4 @@ copy fileName from system to instance --- scp -i "Key name" fileName instancePub
 
 ngnix --- used to build web servers and host multiple websites.
 
-when restarted, ec2 instances change physical hardware.
+when restarted, ec2 instances change physical hardware, within same data center.

@@ -240,3 +240,4 @@ Service Legal Agreement (sla) --- 99.99% uptime
 	means in 100 unit of time, instance will be up for at least 99.99 units
 
 This sla can be for any aws service.
+Upfront --- money paid during the buying of the service

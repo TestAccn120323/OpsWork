@@ -1,3 +1,4 @@
-different computers connected by some means --- network
-different ISPs are connected to each other with submarine cable
-any device that gets an ip address is a host in networking
+- different computers connected by some means --- network
+- different ISPs are connected to each other with submarine cable
+- any device that gets an ip address is a host in networking
+- sharing of data and resources across different hosts is networking.

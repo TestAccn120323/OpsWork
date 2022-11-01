@@ -1,5 +1,1 @@
-- protocols are the set of rules to be followed when there has to establish communication over the network.
-- Need of layers --- to divide the services of different protocols. like http doesn't bother about the services 
-					 assigned to lower layers. It assums that those services are already implemented by them.
-
-- 
+different computers connected by some means --- network

@@ -1,1 +1,2 @@
 different computers connected by some means --- network
+different ISPs are connected to each other with submarine cable

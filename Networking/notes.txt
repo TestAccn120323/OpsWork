@@ -1,16 +1,5 @@
-switch --- a device to used to form a local area network
-usb nic --- usb to lan port
-protocols are set of rules, designed for different devices to communicate over the network
+- protocols are the set of rules to be followed when there has to establish communication over the network.
+- Need of layers --- to divide the services of different protocols. like http doesn't bother about the services 
+					 assigned to lower layers. It assums that those services are already implemented by them.
 
-> HTTP is an application layer protocol means, it does not have to worry about the transport services, ie whether the system is connected via ethernet cable or wifi.
-	it assumes that the transport facility has been established. the browser code, ie the application layer code doesn't need to worry about the transport layer.
-
-> Whole computer network can be considered as collection of layers and protocols
-
-> Basically, we have certain layers, every layer have certain protocols, each protocol have an information part called header in which communication rules are mentioned,
-	like source ip address, destination ip address etc etc
-
-
-=========================================================================================
-
-	OSI MODEL (OPEN SYSTEM INTERCONNECTION MODEL)
+- 

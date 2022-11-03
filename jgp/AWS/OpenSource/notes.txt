@@ -41,3 +41,7 @@ Start with figuring out what is the communication protocol
  - readme (information about the project)
  - contributing --- (information to start contributing in the project)
  - code of conduct
+
+ Way to contribute in OSS
+
+fork -> clone and build in local pc -> make changes -> push -> create pull request. 

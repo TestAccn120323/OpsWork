@@ -26,4 +26,11 @@ Start with figuring out what is the communication protocol
 - IRC style clients like slack, discord etc
 - issues on git hosts
 - seek help to set up locally in these communication platforms.
+- Understand the license of the project.
 - start contributing
+
+ R - Recognize (choose domain to contribute to)
+ E - Engage (take part in meet up and greet ups via irc style clients or github issue trackers)
+ T - Try
+ R - Raise
+ A - Apply

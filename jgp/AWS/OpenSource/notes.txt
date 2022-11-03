@@ -34,3 +34,9 @@ Start with figuring out what is the communication protocol
  T - Try
  R - Raise
  A - Apply
+
+ Documentations for an open source projects
+
+ - license
+ - readme (information about the project)
+ - contributing --- (information to start contributing in the project)

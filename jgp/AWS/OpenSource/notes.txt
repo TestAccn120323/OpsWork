@@ -40,3 +40,4 @@ Start with figuring out what is the communication protocol
  - license
  - readme (information about the project)
  - contributing --- (information to start contributing in the project)
+ - code of conduct

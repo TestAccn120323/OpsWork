@@ -3,3 +3,21 @@
 
 - Set of principles which has to be respected --- open source licenses. 
 - MIT, GNU GPL and free FREE BSD are some of the open source licenses
+
+Proprietary software --- counter part of Open source.
+    Code is confined to the owners or code authors only. Code is distributed by NDA (non distributed agreement) between the 
+    owner and the one with whom it needs to be shared.
+
+Why Open source?
+
+Great Community. 
+Continuous evolution of the software 
+More secure --- as the code is open, vulnaribility in the codebase could be figured out easily
+                and fixes are made asap.
+
+Licenses
+
+permissive licenses like MIT --- do anything with the derived code
+copy left --- license terms of the original work are applicable to the derived work
+
+choosealicene.com --- choose a licenses from different open source licenses.

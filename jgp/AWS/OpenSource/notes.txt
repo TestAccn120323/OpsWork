@@ -21,3 +21,9 @@ permissive licenses like MIT --- do anything with the derived code
 copy left --- license terms of the original work are applicable to the derived work
 
 choosealicene.com --- choose a licenses from different open source licenses.
+
+Start with figuring out what is the communication protocol
+- IRC style clients like slack, discord etc
+- issues on git hosts
+- seek help to set up locally in these communication platforms.
+- start contributing

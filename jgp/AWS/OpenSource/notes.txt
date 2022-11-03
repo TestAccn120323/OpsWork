@@ -30,7 +30,7 @@ Start with figuring out what is the communication protocol
 - start contributing
 
  R - Recognize (choose domain to contribute to)
- E - Engage (take part in meet up and greet ups via irc style clients or github issue trackers)
+ E - Engage (take part in meet up and greet ups via irc style clients or github issue trackers, to get familier with the project)
  T - Try
  R - Raise
  A - Apply

@@ -45,3 +45,7 @@ Start with figuring out what is the communication protocol
  Way to contribute in OSS
 
 fork -> clone and build in local pc -> make changes -> push -> create pull request. 
+
+bash --- bourne again shell 
+sh --- bourne shell
+zsh --- z shell

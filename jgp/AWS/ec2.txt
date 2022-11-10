@@ -243,3 +243,7 @@ This sla can be for any aws service.
 Upfront --- money paid during the buying of the service
 
 key pairs are encrypted using rsa cryptographic algorithm
+
+=========================================================================
+
+yum list {name} --- lists the installed and available packages 

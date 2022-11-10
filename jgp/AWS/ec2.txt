@@ -247,3 +247,4 @@ key pairs are encrypted using rsa cryptographic algorithm
 =========================================================================
 
 yum list {name} --- lists the installed and available packages 
+yum --showduplicates list {name} --- all the installed versions of the packages.

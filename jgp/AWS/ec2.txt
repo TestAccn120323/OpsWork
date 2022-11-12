@@ -21,7 +21,7 @@ Types of cloud computing service models ---
 
 IAAS --- cloud will provide networking features, storage space etc. Hardware and os will be managed by you.
 PAAS --- iaas + os + ide + sdk, just need to put in the code.
-SAAS --- means just subscribe or login and enjoy.
+SAAS --- means just subscribe or login andia enjoy.
 
 Read difference --- https://qr.ae/pvZjky
 
@@ -142,6 +142,7 @@ Types of iam policies ---
 
 - there is a service named security token service (sts), it has an api called assume role api, resposible for credential generation
 - credential is gerenrated in background
+- can be assigned to user / service / application
 
 
 *** aws quota is a thing to check the limit --- in aws docs ***

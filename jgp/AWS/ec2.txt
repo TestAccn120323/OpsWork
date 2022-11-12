@@ -150,6 +150,8 @@ Types of iam policies ---
 
 *** federation or IDENTITY PROVIDER --- establishing trust between two entities, like quora server and google server *** 
 
+- iam qoutas --- to know how many user, groups or roles can be assigned
+
 ##### HOW TO CREATE ROLES######
 docs ---- aws federation	
 

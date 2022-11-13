@@ -1,0 +1,7 @@
+- json based documents used in Authorization of users, groups, resources etc etc.
+- General policies --- used to authorize users, groups, roles
+- Resource based policies --- when policies are attached to resources
+    Principle: An entity that can take an action on the resources
+    Effect: Allow or deny
+    Action: The operation to be performed in the resource
+    Resource: arn name.

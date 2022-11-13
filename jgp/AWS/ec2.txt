@@ -116,7 +116,6 @@ ml engineer etc.
 	eg:- aws s3 ls --profile developer
 
 
-aws policy simulator --- checks if an operation is allowed for a user or not
 
 IAM policies --- set of instructions which defines the permissions a user or group or role can have. It is a json based text
 

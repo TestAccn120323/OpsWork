@@ -139,7 +139,9 @@ reserved instance.
 
 3. dedicated host --- kinda private jet. The whole server is allocated along with the hypervisor. (due to HIPAA compliance)
 	Licensing softwares, needs the access to physical core and mac address. In those cases, whole bare metal needs to be taken.
-4. spot instances --- basically biding for a not so stable instance at a very cheaper rate, kinda.
+4. spot instances --- spot instance price is variable - you have a chance to specify the maximum price you can give 
+						(default capped at on-demand instance price) - if its price exceeds your maximum price 
+						it is taken away from you.
 
 
 Hyper-threading is a process by which a CPU divides up its physical cores into virtual cores that are 

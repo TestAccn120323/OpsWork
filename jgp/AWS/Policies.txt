@@ -1,6 +1,21 @@
 - json based documents used in Authorization of users, groups, resources etc etc.
+    sid: statement id
     Principle: An entity that can take an action on the resources
     Effect: Allow or deny
     Action: The operation to be performed in the resource
     Resource: arn name.
     condition: condition when the policy is in effect.
+
+- Structure:
+    {
+        "Version": "(version)",
+        "Statement": [
+            {
+                statement1(EAR)
+            },
+            {
+                statement2(EAR)
+            }
+        ]
+    }
+

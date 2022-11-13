@@ -1,3 +1,15 @@
+IAM policies --- set of instructions which defines the permissions a user or group or role can have. It is a json based text
+
+Types of iam policies ---
+1. Inline --- can only be assigned to the user, in which it is created
+2. Managed --- generic policies, ie, they can be granted to any user also many at a time
+	a. aws managed
+	b. customer managed
+
+	In policy creation, resource means the service running, like one of the instances 
+
+	In policies, a deny has higher precedence over allow
+
 - json based documents used in Authorization of users, groups, resources etc etc.
     sid: statement id
     Principle: An entity that can take an action on the resources

@@ -115,47 +115,6 @@ ml engineer etc.
 > aws {service name} {operation name} --profile {profile name} --- does the operation of the user in a profile
 	eg:- aws s3 ls --profile developer
 
-
-
-IAM policies --- set of instructions which defines the permissions a user or group or role can have. It is a json based text
-
-Types of iam policies ---
-1. Inline --- can only be assigned to the user, in which it is created
-2. Managed --- generic policies, ie, they can be granted to any user also many at a time
-	a. aws managed
-	b. customer managed
-
-	In policy creation, resource means the service running, like one of the instances 
-
-	In policies, a deny has higher precedence over allow
-
-=========================IAM ROLE=================================
-
-- credentials --- access key and secret key
-- iam role is a secure way to access management console as, 
-  credentials associated with iam role is temporary or dynamically generated unlike iam user.
-- Here, credentials are not managed by us, it is managed by aws. So, less chance that credentials are compromised.
-- With iam role session duration is attached like 1 hr. --- new credentials are generated after every 1 hr.
-- session duration can be set by us. by default, it is 1hr  
-- aws provide, iam roles programmatic access, ie via cli or sdk
-
-- there is a service named security token service (sts), it has an api called assume role api, resposible for credential generation
-- credential is gerenrated in background
-- can be assigned to user / service / application
-
-
-*** aws quota is a thing to check the limit --- in aws docs ***
-*** cloud migration means migrating to cloud from on premise server ***
-
-*** federation or IDENTITY PROVIDER --- establishing trust between two entities, like quora server and google server *** 
-
-- iam qoutas --- to know how many user, groups or roles can be assigned
-
-##### HOW TO CREATE ROLES######
-docs ---- aws federation	
-
-============================================================================================================================
-
 ========================================================EC2=================================================================
 
 It is a regional service.

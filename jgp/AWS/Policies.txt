@@ -3,3 +3,4 @@
     Effect: Allow or deny
     Action: The operation to be performed in the resource
     Resource: arn name.
+    condition: condition when the policy is in effect.

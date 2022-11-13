@@ -1,0 +1,2 @@
+- Load balancer is a service that uniformly distributes traffic to different servers.
+- It increases the availability and fault tolerance of the application.

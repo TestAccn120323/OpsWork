@@ -2,3 +2,10 @@
 - It increases the availability and fault tolerance of the application.
 - ELB is a load balancing service for AWS deployments.
 - Any request coming in will have to go through the load balancer. 
+
+
+Types of elastic loadbalancer:
+
+Classical loadbalancer --- traditional loadbalancer, randomly sends clients request to different servers.
+Network loadbalancer --- Good for handling suddent and violent traffic surge.
+Application loadbalancer --- Can transfer the clinet request to different resources as per the condition.

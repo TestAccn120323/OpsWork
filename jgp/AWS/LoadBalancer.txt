@@ -10,4 +10,5 @@ Classical loadbalancer --- traditional loadbalancer, randomly sends clients requ
     internet loadbalancer --- public servers
     internal facing loadbalancer --- private server (VPC)
 Network loadbalancer --- Good for handling suddent and violent traffic surge.
-Application loadbalancer --- Can transfer the clinet request to different resources as per the condition.
+    Can handle millions of requests per second.
+Application loadbalancer --- identifies the incoming request and directs it to appropriate server from the different servers present

@@ -1,3 +1,4 @@
 - Load balancer is a service that uniformly distributes traffic to different servers.
 - It increases the availability and fault tolerance of the application.
 - ELB is a load balancing service for AWS deployments.
+- Any request coming in will have to go through the load balancer. 

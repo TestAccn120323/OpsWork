@@ -1,0 +1,4 @@
+- 2 or more than 2 computers connected with each other by some means, in a way where they can share informations, is networking
+- All the internet enabled devices are connected to each other via --- isp --- submarine cable --- isp 
+- host --- any device which gets an ip address in a network.
+- 

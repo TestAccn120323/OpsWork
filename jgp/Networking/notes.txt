@@ -1,4 +1,12 @@
 - 2 or more than 2 computers connected with each other by some means, in a way where they can share informations, is networking
 - All the internet enabled devices are connected to each other via --- isp --- submarine cable --- isp 
 - host --- any device which gets an ip address in a network.
-- 
+- Types of network  
+    1. LAN
+    2. WAN
+    
+- WAN is again of 2 types ---
+    1. private WAN --- when there is a dedicated line connection (leased lines) between different LANs spread across different geo zones.
+    2. public WAN --- when different LANs spread across different geo zones are connected via internet. 
+
+- switches --- helps connecting differnet computers togather, and establish LAN connection.

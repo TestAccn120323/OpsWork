@@ -9,8 +9,12 @@ Types of elastic loadbalancer:
 Classical loadbalancer --- traditional loadbalancer, randomly sends clients request to different servers.
     internet loadbalancer --- public servers
     internal facing loadbalancer --- private server (VPC)
+
 Network loadbalancer --- Good for handling suddent and violent traffic surge.
     Can handle millions of requests per second.
-Application loadbalancer --- identifies the incoming request and directs it to appropriate server from the different servers present
 
-- cross zone load balancing --- here, the load balancer directs the incoming request to private subnets of different zones too.
+Application loadbalancer --- identifies the incoming request and directs it to appropriate server from the different servers present
+    - cross zone load balancing --- here, the load balancer directs the incoming request to private subnets of different zones too.
+    - weighted routing system --- have two different versions of the application in different zones with weights 8 and 2 say 
+        - would direct 80% requests to 8 weighted route and 20% to 2 weighted route.
+     

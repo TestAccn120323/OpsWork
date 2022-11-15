@@ -17,4 +17,4 @@ Application loadbalancer --- identifies the incoming request and directs it to a
     - cross zone load balancing --- here, the load balancer directs the incoming request to private subnets of different zones too.
     - weighted routing system --- have two different versions of the application in different zones with weights 8 and 2 say 
         - would direct 80% requests to 8 weighted route and 20% to 2 weighted route.
-     
+        - this is also called blue/green deployment.

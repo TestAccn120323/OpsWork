@@ -2,13 +2,11 @@
 - vpc is a logically isolated sections in aws
 - SOD --- segegration of duties.
 - isolation is required as, say a developer should not interfare with the database stuffs, and so required vpc.
-- vpc acts as a boundary, like college boundary, which ensures that no non-college guys roam inside the campus unnecessarily.
+- vpc acts as a boundary, like college boundary, which ensures no non-college guys roam inside the campus unnecessarily.
 - vpc is regional service.
 - there is a default vpc in every region.
 - a single vpc can not span across mulitple region.
 - within a vpc, also we need isolation in the resource level, 
-    eg:- an instance which can overrite in a database when the customer uses the instance.
-    we can't provide direct access to the database.
 - This isolation within the resource level is provided by subnet.
 - subnet isolates public resources from private resources
 - Hence, there is a public subnet and a private subnet.

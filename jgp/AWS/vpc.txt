@@ -17,3 +17,9 @@
     both stay in the same zone, and the architecture is replicated in other zones too, for high availability.
 - network allow interaction via ip addresses.
 - ipv4 --- a 32 bit addressing which is a number from 0.0.0.0 to 255.255.255.255. (four 8 bit numbers seperated by period)
+- cidr --- classless inter domain routing
+- subnet --- range of ip addresses in vpc
+- cidr address/block --- ipv4/subnet mask or ipv4/cidr.
+    eg:- 10.0.1.0/16 
+
+    here, no of IPs are = 2 ^ (32 - subnet mask) = 2 ^ (32 - 16) = 2 ^ 16.

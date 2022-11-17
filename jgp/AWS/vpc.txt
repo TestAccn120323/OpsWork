@@ -1,0 +1,4 @@
+- vpc --- virtual private cloud
+- vpc is a logically isolated sections in aws
+- SOD --- segegration of duties.
+- isolation is required as, say a developer should not interfare with the database stuffs, and so required vpc.

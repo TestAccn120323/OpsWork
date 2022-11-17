@@ -7,7 +7,7 @@
 Types of elastic loadbalancer:
 
 Classical loadbalancer --- traditional loadbalancer, randomly sends clients request to different servers.
-    internet loadbalancer --- public servers
+    internet facing loadbalancer --- public servers
     internal facing loadbalancer --- private server (VPC)
 
 Network loadbalancer --- Good for handling suddent and violent traffic surge.

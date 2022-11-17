@@ -15,3 +15,5 @@
 - in a region there is a vpc, in vpc there can be availability zones, in az there are subnets.
 - subnets can't span across az.
 - High availability --- minimum downtime at the time of some natural calamity.
+- public and private subnets can be a part of 2 different az but, natural architecture should be,
+    both stay in the same zone, and the architecture is replicated in other zones too, for high availability.

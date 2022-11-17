@@ -14,3 +14,4 @@
 - Hence, there is a public subnet and a private subnet.
 - in a region there is a vpc, in vpc there can be availability zones, in az there are subnets.
 - subnets can't span across az.
+- High availability --- minimum downtime at the time of some natural calamity.

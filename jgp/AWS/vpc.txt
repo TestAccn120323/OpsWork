@@ -12,4 +12,5 @@
 - This isolation within the resource level is provided by subnet.
 - subnet isolates public resources from private resources
 - Hence, there is a public subnet and a private subnet.
-- in a region there is a vpc, in vpc there can be availability zones, in az there can be subnets.
+- in a region there is a vpc, in vpc there can be availability zones, in az there are subnets.
+- subnets can't span across az.

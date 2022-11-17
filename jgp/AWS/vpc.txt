@@ -17,3 +17,4 @@
 - High availability --- minimum downtime at the time of some natural calamity.
 - public and private subnets can be a part of 2 different az but, natural architecture should be,
     both stay in the same zone, and the architecture is replicated in other zones too, for high availability.
+- network allow interaction via ip addresses.

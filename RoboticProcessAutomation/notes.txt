@@ -7,3 +7,10 @@ RPA tools are used to build bots which mimic human jobs in a more efficient ways
 Automation anywhere a2019 automation tool is one of the RPA tools
 It is based on AI and ML technologies. It is a cloud native rpa tool.
 cloud native tools - these are highly scalable applications which are deployed in public, private or hybrid cloud.
+
+Architecture of Automation anywhere
+
+There are 3 parts in the Architecture -
+1. control room - core of the software, by which the bots are controlled, monitored and managed.
+2. bots creator - used to create the bots.
+3. bots runner - runtime client, used to run bots the device.

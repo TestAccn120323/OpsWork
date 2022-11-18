@@ -10,6 +10,12 @@
     2. public WAN --- when different LANs spread across different geo zones are connected via internet. 
 
 - switches --- helps connecting differnet computers togather, and establish LAN connection.
-- ADSL --- Asymmetric digital subscriber line devices are the combination of different devices like switch, modem and router
-- fibre modem --- converts light signals to digital signals.
-- ADSL is connected to isp via PSTN cable (public switch telephone network) 
+- routers --- helps connecting different networks togather.
+
+- ip address classes ---
+    1. class a
+    2. class b
+    3. class c
+
+- class a --- when first octate is between 1 and 126 --- then first octate needs to be equal to communicate.
+- class b --- when first octate is between 128 - 191 --- first 2 octates needs to be equal to communicate.

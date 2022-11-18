@@ -1,0 +1,6 @@
+It is a technology which is used to replicate and automate things done by human with a much faster pace.
+Robots can open emails, can do login stuffs, read databases, collect data etc.
+RPA solutions allow organisations to do more with less effort.
+a not so sneaky fact, robots operates 3 times faster than humans. 
+RPA solutions does the same, freeing employees to do more complex and important jobs in the industry, like problem solving
+    exceptional handling and troubleshooting.

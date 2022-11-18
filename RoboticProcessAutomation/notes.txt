@@ -14,3 +14,12 @@ There are 3 parts in the Architecture -
 1. control room - core of the software, by which the bots are controlled, monitored and managed.
 2. bots creator - used to create the bots.
 3. bots runner - runtime client, used to run bots the device.
+
+RPA lifecycle ---
+
+1. discovery phase --- processes to be automated are identified.
+2. solution design phase --- rpa solution is designedl.
+3. development phase --- bots are created for the process.
+4. testing phase --- bots are tested for the functionality.
+5. deployment phase --- bots are deployed on the production machines.
+6. suport and mentainance phase --- bots are monitored and maintained for their work.

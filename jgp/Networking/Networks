@@ -10,7 +10,7 @@ Small data are first downloaded to measure the download speed for a fixed time. 
 
 How does vpn works?
 
-without vpn --- you send a request to access a site. it is sent in the form of a packet to the router, further to your nearest isp server and finally to the site. once the packet is recieved by the site, and if the site is using https, then further data transfer is 
+without vpn --- you send a request to access a site. it is sent in the form of a packet to the router, further to your nearest isp server and finally to the site. once the packet is recieved by the site, and if the site is using https, then further data sharing is 
 encrypted. ISP however, keep records of the sites you are visiting, and your exact location, ip address and stuffs.
 
 with vpn --- from isp the packet is sent to vpn server and then things are same as above. vpn server however, doesn't store your much 
@@ -18,3 +18,5 @@ information. It hides your exact location from the site you visit. and also encr
 store your informations too. Also free vpns have comparatively very less servers hence very low speeds.
 
 Although, paid vpns seem to give us complete anonymity over the internet, it is not so in reality. Browser fingerprinting is a way to track you down anyways.
+
+http cookies (sessionid) --- they are small data, stored by the site you visit on your local system, it can store credentials, cart items, or many other items on your local system.

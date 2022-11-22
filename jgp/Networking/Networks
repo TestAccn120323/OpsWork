@@ -16,7 +16,7 @@ ISP performs a process named DNS look up to route your request to appropriate we
 
 with vpn --- from isp the packet is sent to vpn server and then things are same as above. vpn server however, doesn't store your much 
 information. It hides your exact location from the site you visit. and also encrypts the data sent from your device, paid vpns do not 
-store your informations too. Also free vpns have comparatively very less servers hence very low speeds.
+store your informations too. Free vpns have comparatively very less servers hence very low speeds.
 
 Although, paid vpns seem to give us complete anonymity over the internet, it is not so in reality. Browser fingerprinting is a way to track you down anyways.
 

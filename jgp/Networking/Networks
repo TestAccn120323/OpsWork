@@ -12,6 +12,7 @@ How does vpn works?
 
 without vpn --- you send a request to access a site. it is sent in the form of a packet to the router, further to your nearest isp server and finally to the site. once the packet is recieved by the site, and if the site is using https, then further data sharing is 
 encrypted. ISP however, keep records of the sites you are visiting, and your exact location, ip address and stuffs.
+ISP performs a process named DNS look up to route your request to appropriate web server.
 
 with vpn --- from isp the packet is sent to vpn server and then things are same as above. vpn server however, doesn't store your much 
 information. It hides your exact location from the site you visit. and also encrypts the data sent from your device, paid vpns do not 

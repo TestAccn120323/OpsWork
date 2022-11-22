@@ -1,0 +1,20 @@
+how does speed test work ---
+
+PING --- Packet Inter Network Groper
+it is a small request sent over the network.
+
+first a ping is sent to all the nearest isp test servers to measure the latency, and the one with lowest latency is then selected
+for download and upload purposes. Eventually, the speeds are then measured.
+
+Small data are first downloaded to measure the download speed for a fixed time. Later, the same data is uploaded to measure the upload speed.
+
+How does vpn works?
+
+without vpn --- you send a request to access a site. it is sent in the form of a packet to the router, further to your nearest isp server and finally to the site. once the packet is recieved by the site, and if the site is using https, then further data transfer is 
+encrypted. ISP however, keep records of the sites you are visiting, and your exact location, ip address and stuffs.
+
+with vpn --- from isp the packet is sent to vpn server and then things are same as above. vpn server however, doesn't store your much 
+information. It hides your exact location from the site you visit. and also encrypts the data sent from your device, paid vpns do not 
+store your informations too. Also free vpns have comparatively very less servers hence very low speeds.
+
+Although, paid vpns seem to give us complete anonymity over the internet, it is not so in reality. Browser fingerprinting is a way to track you down anyways.

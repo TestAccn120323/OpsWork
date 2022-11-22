@@ -23,3 +23,8 @@ RPA lifecycle ---
 4. testing phase --- bots are tested for the functionality.
 5. deployment phase --- bots are deployed on the production machines.
 6. suport and mentainance phase --- bots are monitored and maintained for their work.
+
+limiations as of now ---
+
+1. process should be rule based.
+2. data involved in the process should be in digital format like pdfs, images, excel docs etc.

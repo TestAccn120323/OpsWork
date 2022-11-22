@@ -12,6 +12,10 @@
 - switches --- helps connecting differnet computers togather, and establish LAN connection.
 - routers --- helps connecting different networks togather.
 
+- Devices in a network have NIC (network interface cards) installed it due to which they can connet to the network.
+  and it is the NIC which has the MAC address. 
+
+
 - ip address classes ---
     1. class a
     2. class b

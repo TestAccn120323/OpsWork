@@ -20,4 +20,5 @@ store your informations too. Free vpns have comparatively very less servers henc
 
 Although, paid vpns seem to give us complete anonymity over the internet, it is not so in reality. Browser fingerprinting is a way to track you down anyways.
 
-http cookies (sessionid) --- they are small data, stored by the site you visit on your local system, it can store credentials, cart items, or many other items on your local system.
+http cookies (creates a sessionid) --- they are small data, stored by the site you visit on your local system, it can store credentials, cart items, or many other items on your local system. it has a unique sessionid by which it identifies you in your 
+next visit. 

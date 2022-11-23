@@ -48,3 +48,17 @@ isp hirarchy ---
 3. tire 3
 
 hub works on signals and is a layer 1 device --- so it always broadcast the messages, switches don't 
+switches store the mac address of the device connected, hence is better.
+
+Routers used by ISPs:
+1. ISR (Integrated service routers)
+2. ASR (Aggrated service routers)
+3. CSR ()
+
+
+OSI model:
+
+1. Application layer - softwares which interacts one human to another. 
+    protocols: HTTP, HTTPS - used in web browsers
+               SMTP --- send email 
+               POP (post office protocol), IMAP (internet message access protocol) --- recieve email

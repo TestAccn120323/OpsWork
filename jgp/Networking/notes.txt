@@ -59,6 +59,7 @@ Routers used by ISPs:
 OSI model:
 
 1. Application layer - softwares which interacts one human to another. 
-    protocols: HTTP, HTTPS - used in web browsers
+    protocols: HTTP, HTTPS - used by www, so that we can access the web sites.
                SMTP --- send email 
                POP (post office protocol), IMAP (internet message access protocol) --- recieve email
+               SSH or telnet --- remotely access the devices.

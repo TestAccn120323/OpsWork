@@ -26,7 +26,7 @@
 - class c --- when first octate is between 192 - 223 --- first 3 octates needs to be equal to communicate.
 
 127 --- loopback ips, ie self own ip or localhost.
-
+0 --- is also reserved.
 - windows firewall is a fucker, it can blow your mind by not allowing to access shared folders and files
 
 - types of ip addresses:

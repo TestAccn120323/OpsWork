@@ -28,3 +28,9 @@
 127 --- loopback ips, ie self own ip or localhost.
 
 - windows firewall is a fucker, it can blow your mind by not allowing to access shared folders and files
+
+- types of ip addresses:
+1. ipv4 --- 32 bits, have 4 groups, each of 8 bits
+2. ipv6 --- 128 bits, have 8 groups, each of 16 bits
+
+we use ipv6 because we have shortage of ipv4

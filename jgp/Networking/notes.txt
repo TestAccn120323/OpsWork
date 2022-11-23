@@ -34,3 +34,17 @@
 2. ipv6 --- 128 bits, have 8 groups, each of 16 bits
 
 we use ipv6 because we have shortage of ipv4
+
+IANA --- internet assigned number authority is a org. who oversees the ip addresses, domain names, weather they are 
+    according to internet standards.
+
+IANA has formed regional internet registris (rir). We go to rir to buy ip addresses.
+for asia it is --- apnic.
+
+
+isp hirarchy ---
+1. tire 1 
+2. tire 2
+3. tire 3
+
+hub works on signals and is a layer 1 device --- so it always broadcast the messages, switches don't 

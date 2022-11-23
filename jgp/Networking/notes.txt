@@ -17,9 +17,14 @@
 
 
 - ip address classes ---
-    1. class a
+    1. class 
     2. class b
     3. class c
 
 - class a --- when first octate is between 1 and 126 --- then first octate needs to be equal to communicate.
-- class b --- when first octate is between 128 - 191 --- first 2 octates needs to be equal to communicate.
+- class b --- when first octate is between 128 - 191 --- first 2 octates needs to be equal to communicate. 
+- class c --- when first octate is between 192 - 223 --- first 3 octates needs to be equal to communicate.
+
+127 --- loopback ips, ie self own ip or localhost.
+
+- windows firewall is a fucker, it can blow your mind by not allowing to access shared folders and files

@@ -36,6 +36,7 @@
 
 
 subnet mask --- used to determine weather the systems in network having their ip addresses will communicate
+                same as CIDR.
 
                                                            ip address         subnet mask 
 

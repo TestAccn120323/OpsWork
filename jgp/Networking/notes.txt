@@ -46,6 +46,18 @@ subnet mask (represents network bits) --- used to determine weather the systems 
 
 
 
+1 - 128
+2 - 192
+3 - 224
+4 - 240
+5 - 248 
+6 - 252 
+7 - 254
+
+
+subnet masking is used to reduce the wastage of ip
+
+
 127 --- loopback ips, ie self own ip or localhost.
 0 --- is also reserved.
 - windows firewall is a fucker, it can blow your mind by not allowing to access shared folders and files
@@ -127,10 +139,3 @@ no encapsulation occures in physical layer.
 
 ietf -> iana -> rir -> isp -> end users
 
-1 - 128
-2 - 192
-3 - 224
-4 - 240
-5 - 248 
-6 - 252 
-7 - 254

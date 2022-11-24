@@ -15,15 +15,24 @@
 - Devices in a network have NIC (network interface cards) installed it due to which they can connet to the network.
   and it is the NIC which has the MAC address. 
 
+- ip addresses ---
 
-- ip address classes ---
-    1. class 
+    ip addresses have 2 parts 
+    1. network part (N)
+    2. host part (H)
+
+    for the systems to communicate, the network portion of their ip addresses should match, 
+
+- ipv4 address classes ---
+    1. class a
     2. class b
     3. class c
 
-- class a --- when first octate is between 1 and 126 --- then first octate needs to be equal to communicate.
-- class b --- when first octate is between 128 - 191 --- first 2 octates needs to be equal to communicate. 
-- class c --- when first octate is between 192 - 223 --- first 3 octates needs to be equal to communicate.
+- class a --- when first octate is between 1 and 126 --- then first octate needs to be equal to communicate.    N.H.H.H
+- class b --- when first octate is between 128 - 191 --- first 2 octates needs to be equal to communicate.      N.N.H.H
+- class c --- when first octate is between 192 - 223 --- first 3 octates needs to be equal to communicate.      N.N.N.H
+
+- class d and class e are not used by computers
 
 127 --- loopback ips, ie self own ip or localhost.
 0 --- is also reserved.
@@ -35,11 +44,17 @@
 
 we use ipv6 because we have shortage of ipv4
 
-IANA --- internet assigned number authority is a org. who oversees the ip addresses, domain names, weather they are 
-    according to internet standards.
+IANA --- internet assigned number authority is a org. who oversees the ip addresses, domain names and protocol assignments and 
+         their port number.
 
-IANA has formed regional internet registris (rir). We go to rir to buy ip addresses.
+        when we need to buy 4 5 ips then we don't need to go to apnic, if too many ips to be bought, then sure apnic is the way.
+
+        after we buy our own ip, we need to announce it to global routing table
+
+IANA has formed regional internet registries (rir). We go to rir to buy ip addresses.
 for asia it is --- apnic.
+
+
 
 
 isp hirarchy ---
@@ -95,3 +110,8 @@ Both of them add port numbers in the 20 or 8 bytes.
 7. Physical layer - packets are encoded to be transferred, by wires to signals or by wireless mediums to waves.
                                                      
 no encapsulation occures in physical layer.
+
+- router is responsible to choose the best path for data transfer.
+
+ietf -> iana -> rir -> isp -> end users
+

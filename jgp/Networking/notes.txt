@@ -58,8 +58,40 @@ Routers used by ISPs:
 
 OSI model:
 
-1. Application layer - softwares which interacts one human to another. 
+1. Application layer - softwares which interacts one human to another. Concerned with the transfer of the raw data, like transfer of 
+    music files, videos, messages, emails, text messages etc.
     protocols: HTTP, HTTPS - used by www, so that we can access the web sites.
                SMTP --- send email 
                POP (post office protocol), IMAP (internet message access protocol) --- recieve email
                SSH or telnet --- remotely access the devices.
+
+2. Presentation layer - Responsibe for representation of data in correct format, like videos in mp4, images in mp3 etc.
+                for encryption and decryption or compression and decompression.
+
+3. session layer - responsible for creating and maintaining the session (timeframes) withing the site.
+
+4. Transport layer - changes the data into multiple segments and sequencing occures. Retransmission also occurs here.
+                     responsible for end to end delivery (transmission of data from source to destination)
+            TCP                                         |                       UDP
+        ------------------------------------------------|----------------------------------------------------------------
+        transmission is followed by acknowledgement          transmission is not followed by acknowledgement 
+        of the same.                                         of the same.
+
+        Retransmission occures in case of segment lost.       No Retransmission.
+
+        it takes 20 bytes segments                            it takes 8 bytes.
+
+        ip number is 6                                        ip number is 17 
+
+
+Both of them add port numbers in the 20 or 8 bytes.
+
+5. Network layer - segments are converted into packets by appending the ip address of the source and destination addresses.
+                   routers work here.
+
+6. Datalink layer - packets are converted into frames by this layer by appending the mac address of the source and destination 
+                    addresses. switches work here. 
+
+7. Physical layer - packets are encoded to be transferred, by wires to signals or by wireless mediums to waves.
+                                                     
+no encapsulation occures in physical layer.

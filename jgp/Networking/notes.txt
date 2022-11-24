@@ -35,7 +35,7 @@
 - class d and class e are not used by computers
 
 
-subnet mask --- used to determine weather the systems in network having their ip addresses will communicate
+subnet mask (represents network bits) --- used to determine weather the systems in network having their ip addresses will communicate
                 same as CIDR.
 
                                                            ip address         subnet mask 

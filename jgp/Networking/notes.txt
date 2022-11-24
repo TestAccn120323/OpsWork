@@ -28,11 +28,22 @@
     2. class b
     3. class c
 
-- class a --- when first octate is between 1 and 126 --- then first octate needs to be equal to communicate.    N.H.H.H
-- class b --- when first octate is between 128 - 191 --- first 2 octates needs to be equal to communicate.      N.N.H.H
-- class c --- when first octate is between 192 - 223 --- first 3 octates needs to be equal to communicate.      N.N.N.H
+- class a --- when first octate is between 1 and 126
+- class b --- when first octate is between 128 - 191
+- class c --- when first octate is between 192 - 223
 
 - class d and class e are not used by computers
+
+
+subnet mask --- used to determine weather the systems in network having their ip addresses will communicate
+
+                                                           ip address         subnet mask 
+
+--- then first octate needs to be equal to communicate.    N.H.H.H            255.0.0.0
+--- first 2 octates needs to be equal to communicate.      N.N.H.H            255.255.0.0
+--- first 3 octates needs to be equal to communicate.      N.N.N.H            255.255.255.0
+
+
 
 127 --- loopback ips, ie self own ip or localhost.
 0 --- is also reserved.

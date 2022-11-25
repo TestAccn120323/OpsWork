@@ -25,3 +25,7 @@ next visit.
 
 ssh protocol --- remotely access machines over the internet, to add data, delete data or transfer data from one machine to another.
                  runs on port 22.
+
+                 It encrypts the data which is shared via network. and also uses public and private keys to get the prompt of the 
+                 remote device. 
+                 Such things are not included in telnet.

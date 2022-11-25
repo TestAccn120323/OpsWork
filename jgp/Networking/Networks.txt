@@ -22,3 +22,6 @@ Although, paid vpns seem to give us complete anonymity over the internet, it is 
 
 http cookies (creates a sessionid) --- they are small data, stored by the site you visit on your local system, it can store credentials, cart items, or many other items on your local system. it has a unique sessionid by which it identifies you in your 
 next visit. 
+
+ssh protocol --- remotely access machines over the internet, to add data, delete data or transfer data from one machine to another.
+                 runs on port 22.

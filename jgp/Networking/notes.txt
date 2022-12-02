@@ -135,3 +135,9 @@ no encapsulation occures in physical layer.
 
 ietf -> iana -> rir -> isp -> end users
 
+
+
+
+
+protocols --- every protocol have a header.
+    eg: 802.11 is a wifi protocol, 802.3 is an ethernet protocol.

@@ -125,7 +125,7 @@ Both of them add port numbers in the 20 or 8 bytes.
                    routers work here.
 
 6. Datalink layer - packets are converted into frames by this layer by appending the mac address of the source and destination 
-                    addresses. switches work here. 
+                    addresses. switches work here. direct connection or connection via switch, communication
 
 7. Physical layer - packets are encoded to be transferred, by wires to signals or by wireless mediums to waves.
                                                      

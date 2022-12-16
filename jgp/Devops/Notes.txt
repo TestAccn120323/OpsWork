@@ -4,3 +4,15 @@
 - Jenkins is an automation tool used to fetch the code by dev team from the code repo to the build server,
   builds the code and in case of any error send a ping to the dev team about the same,
   dev team fixes the issue and pushes the code to the code repo and the cycle repeats.
+
+  In devops we use:
+
+  1. build automation tools
+  2. automation testing tools
+  3. Configuration management tools
+  4. Infrastructure deployment tools
+  5. Infrastructure management tools
+
+  - Roles:
+  1. cicd pipelines development and management
+  2. application monitoring 

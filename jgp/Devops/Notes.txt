@@ -1,0 +1,7 @@
+- Devops is basically automation of SDLC.
+- It resolves the chaos developed due to dev and ops team.
+
+- Jenkins is an automation tool used to fetch the code by dev team from the code repo to the build server,
+  builds the code and in case of any error send a ping to the dev team about the same,
+  dev team fixes the issue and pushes the code to the code repo and the cycle repeats.
+

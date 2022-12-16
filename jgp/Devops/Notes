@@ -9,9 +9,8 @@
 
   1. build automation tools
   2. automation testing tools
-  3. Configuration management tools
-  4. Infrastructure deployment tools
-  5. Infrastructure management tools
+  3. Configuration management tools (Ansible)
+  4. Infrastructure orchestration tools (Terraform)
   6. monitoring (application program monitoring, server monitoring, infra monitoring)
 
   - Roles:

@@ -1,0 +1,9 @@
+Mongo vs Postgres:
+
+When PostgreSQL says that something has been saved, it really has landed on hard drive. Mongo instead queues it up to be "saved eventually" meaning that you can expect that while 99.9% of the data will go through fine, that remaining 0.1% might be gone (lack of hard drive space, some kind of OS bug, power shutdown). Not important if you are making a comment system on Reddit, will destroy your business if you try to store financial records in it.
+
+No real support for foreign keys for Mongo, at least not on a database layer. Example - you might decide that it should be impossible to delete a customer if there are orders still belonging to them. On Postgres it's a child's play but on Mongo you need to implement it inside your application stack (which is waaaay more error prone as this check is bypassed if you work with database directly).
+
+PostgreSQL is (assuming a single database server) generally faster if you need to find a dataset that requires using several different tables. As an example - "find Orders made between 11.2010 - 11.2014 by Customers that have used reddit registration PromoCode and their Shipping was done by USPS". 4 different tables (customers, promo_codes, shippings, orders).
+
+On the other hand MongoDB has better support for multi-server infrastructure, at least when it comes to simultaneous writes and sharding (splitting your database in such a way that for instance customers with names from A to M are on one server and from N to Z on another).

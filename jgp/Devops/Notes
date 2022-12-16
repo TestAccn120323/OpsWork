@@ -12,7 +12,11 @@
   3. Configuration management tools
   4. Infrastructure deployment tools
   5. Infrastructure management tools
+  6. monitoring (application program monitoring, server monitoring, infra monitoring)
 
   - Roles:
   1. cicd pipelines development and management
   2. application monitoring 
+
+
+  Output of the build is called artifact.
